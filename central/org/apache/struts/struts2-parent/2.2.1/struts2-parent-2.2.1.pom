@@ -1,0 +1,363 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+   <parent>
+      <groupId>org.apache.struts</groupId>
+      <artifactId>struts-master</artifactId>
+      <version>7</version>
+   </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.apache.struts</groupId>
+    <artifactId>struts2-parent</artifactId>
+    <version>2.2.1</version>
+    <packaging>pom</packaging>
+    <name>Struts 2</name>
+    <url>http://struts.apache.org/struts2</url>
+    <description>Apache Struts 2</description>
+
+    <inceptionYear>2000</inceptionYear>
+
+    <!--
+    <description>
+        Apache Struts 2 is an elegant, extensible framework,
+        well suited for creating moderate to large-scale Java web
+        applications. The framework is designed to streamline the
+        full development cycle, from building, to deploying,
+        to maintaining applications over time.
+    </description>
+    -->
+
+    <scm>
+       <connection>scm:svn:http://svn.apache.org/repos/asf/struts/struts2/tags/STRUTS_2_2_1</connection>
+       <developerConnection>scm:svn:https://svn.apache.org/repos/asf/struts/struts2/tags/STRUTS_2_2_1</developerConnection>
+       <url>http://svn.apache.org/viewcvs.cgi/struts/struts2/tags/STRUTS_2_2_1</url>
+    </scm>
+
+    <issueManagement>
+        <system>JIRA</system>
+        <url>http://issues.apache.org/struts/</url>
+    </issueManagement>
+
+    <ciManagement />
+    <distributionManagement>
+        <site>
+            <id>apache-site</id>
+            <url>scp://people.apache.org/www/struts.apache.org/2.x/</url>
+        </site>
+    </distributionManagement>
+
+    <modules>
+        <module>xwork-core</module>
+        <module>core</module>
+        <module>apps</module>
+        <module>plugins</module>
+        <module>bundles</module>
+        <module>archetypes</module>
+    </modules>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments />
+        </license>
+    </licenses>
+
+    <organization>
+        <name>Apache Software Foundation</name>
+        <url>http://www.apache.org</url>
+    </organization>
+
+    <properties>
+        <currentVersion>${pom.version}</currentVersion>
+        <struts2.springPlatformVersion>2.5.6</struts2.springPlatformVersion>
+    </properties>
+
+    <profiles>
+        <profile>
+            <id>includeAssembly</id>
+            <activation>
+                <property>
+                    <name>!skipAssembly</name>
+                </property>
+            </activation>
+            <modules>
+                <module>assembly</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>xwork</id>
+            <modules>
+                <module>xwork-core</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>struts-annotations</id>
+            <modules>
+                <module>../maven/struts-annotations</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>j4</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>retrotranslator-maven-plugin</artifactId>
+                        <version>1.0-alpha-3</version>
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>translate-project</goal>
+                                </goals>
+                                <configuration>
+                                    <verify>false</verify>
+                                    <failonwarning>true</failonwarning>
+                                    <lazy>true</lazy>
+                                    <advanced>true</advanced>
+                                    <verbose>false</verbose>
+                                    <destdir>${project.build.directory}/classes-retro</destdir>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-idea-plugin</artifactId>
+                    <configuration>
+                        <jdkName>1.5</jdkName>
+                        <exclude>target,test-output,.clover</exclude>
+                        <useShortDependencyNames>true</useShortDependencyNames>
+                        <!--
+                        <libraries>
+                            <library>
+                                <name>xwork</name>
+                                <sources>file://$xwork$/src/java</sources>
+                            </library>
+                            <library>
+                                <name>xwork-tiger</name>
+                                <sources>file://$xwork$/tiger/src/java</sources>
+                            </library>
+                        </libraries>
+                        -->
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>2.0-beta-7</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                      <source>1.5</source>
+                      <target>1.5</target>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.3</version>
+                    <configuration>
+                        <includes>
+                            <include>**/*Test.java</include>
+                        </includes>
+                        <excludes>
+                            <exclude>**/TestBean.java</exclude>
+                        </excludes>
+                    </configuration>
+                </plugin>
+                <plugin>
+                  <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <configuration>
+                        <preparationGoals>clean verify install</preparationGoals>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+              <artifactId>maven-jar-plugin</artifactId>
+              <configuration>
+                <archive>
+                  <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+                </archive>
+              </configuration>
+            </plugin>
+            <plugin>
+              <groupId>org.apache.felix</groupId>
+              <artifactId>maven-bundle-plugin</artifactId>
+              <executions>
+                <execution>
+                  <id>bundle-manifest</id>
+                  <phase>process-classes</phase>
+                  <goals>
+                    <goal>manifest</goal>
+                  </goals>
+                </execution>
+              </executions>
+            </plugin>
+            <!--
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>rat-maven-plugin</artifactId>
+                <version>1.0-alpha-2</version>
+                <executions>
+                    <execution>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                        <configuration>
+                            <addDefaultLicenseMatchers>false</addDefaultLicenseMatchers>
+                            <licenseMatchers>
+                                <classNames>
+                                    <className>rat.analysis.license.ApacheSoftwareLicense20</className>
+                                </classNames>
+                            </licenseMatchers>
+                            <includes>
+                                <include>pom.xml</include>
+                                <include>src/**</include>
+                            </includes>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-source</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Commenting out the license plugin, until it works like we want.
+            To use the "license:format" goal, remove the "core" module before running,
+            otherwise it will ignore the file exclusions.
+
+            <plugin>
+	            <groupId>com.google.code.maven-license-plugin</groupId>
+	            <artifactId>maven-license-plugin</artifactId>
+	            <version>1.2.7-SNAPSHOT</version>
+	            <configuration>
+	            	<header>src/etc/header.txt</header>
+	            	<includes>
+	            		<include>pom.xml</include>
+	            		<include>src/**</include>
+	            		<include>core/pom.xml</include>
+	            		<include>core/src/**</include>
+	            		<include>plugins/**/pom.xml</include>
+	            		<include>plugins/**/src/**</include>
+	            		<include>apps/**/pom.xml</include>
+	            	</includes>
+	            	<excludes>
+	            		<exclude>**/*.txt</exclude>
+                        <exclude>core/src/test/resources/org/apache/struts2/views/jsp/ui/*</exclude>
+                        <exclude>core/src/main/resources/org/apache/struts2/static/domTT.js</exclude>
+                        <exclude>core/src/test/resources/org/apache/struts2/interceptor/validation/*</exclude>
+                        <exclude>core/src/site/resources/tags/**</exclude>
+                        <exclude>plugins/dojo/src/main/resources/org/apache/struts2/static/dojo/nls/**</exclude>
+                        <exclude>plugins/dojo/src/main/resources/org/apache/struts2/static/dojo/src/**</exclude>
+                        <exclude>plugins/dojo/src/main/resources/org/apache/struts2/static/dojo/*</exclude>
+                        <exclude>plugins/dojo/src/test/resources/org/apache/struts2/dojo/views/jsp/ui/**</exclude>
+	                    <exclude>apps/**/src/**</exclude>
+	            	</excludes>
+	            </configuration>
+	        </plugin> -->
+
+        </plugins>
+        <defaultGoal>install</defaultGoal>
+
+    </build>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+             </plugin>
+            <plugin>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.2</version>
+                <!--
+                <configuration>
+                    <aggregate>true</aggregate>
+                </configuration>
+                -->
+            </plugin>
+            <plugin>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+            </plugin>
+            <!--
+            <plugin>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <configuration>
+                  <configLocation>http://svn.apache.org/repos/asf/struts/maven/trunk/build/struts_checks.xml</configLocation>
+                </configuration>
+            </plugin>
+            -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>jxr-maven-plugin</artifactId>
+            </plugin>
+            <!--
+            <plugin>
+                <artifactId>maven-pmd-plugin</artifactId>
+            </plugin>
+            -->
+            <!--
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>rat-maven-plugin</artifactId>
+                <version>1.0-alpha-2</version>
+                <configuration>
+                    <includes>
+                        <include>pom.xml</include>
+                        <include>src/**</include>
+                    </includes>
+                    <excludes>
+                        <exclude>assembly/src/main/resources/backport/RETROTRANSLATOR-LICENSE.txt</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+            -->
+        </plugins>
+    </reporting>
+
+    <dependencyManagement>
+      <dependencies>
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts-annotations</artifactId>
+            <version>1.0.5</version>
+            <scope>compile</scope>
+            <optional>true</optional>
+        </dependency>
+      </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>3.8.0.GA</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

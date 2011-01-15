@@ -1,0 +1,47 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>commons-discovery</groupId>
+  <artifactId>commons-discovery</artifactId>
+  <name>Discovery</name>
+  <version>1.0-dev</version>
+  <description>Commons Discovery</description>
+  <inceptionYear>2002</inceptionYear>
+  <developers>
+    <developer>
+      <id></id>
+      <name>Richard Sitze</name>
+      <email></email>
+      <organization></organization>
+    </developer>
+    <developer>
+      <id></id>
+      <name>Craig R. McClanahan</name>
+      <email></email>
+      <organization></organization>
+    </developer>
+    <developer>
+      <id></id>
+      <name>Costin Manolache</name>
+      <email></email>
+      <organization></organization>
+    </developer>
+    <developer>
+      <id>jstrachan</id>
+      <name>James Strachan</name>
+      <email>jstrachan@apache.org</email>
+      <organization>SpiritSoft, Inc.</organization>
+    </developer>
+  </developers>
+  <dependencies>
+    <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+      <version>1.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.7</version>
+    </dependency>
+  </dependencies>
+</project>
