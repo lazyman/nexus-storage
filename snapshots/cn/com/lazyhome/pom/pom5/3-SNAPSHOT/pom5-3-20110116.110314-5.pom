@@ -5,7 +5,7 @@
 	<artifactId>pom5</artifactId>
 	<packaging>pom</packaging>
 	<name>java 5 pom</name>
-	<version>2-SNAPSHOT</version>
+	<version>3-SNAPSHOT</version>
 	<description>v1.5 compiler
 and 
 distributionManagement
@@ -53,6 +53,11 @@ distributionManagement
 				<groupId>log4j</groupId>
 				<artifactId>log4j</artifactId>
 				<version>1.2.15</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate</artifactId>
+				<version>3.2.7.ga</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

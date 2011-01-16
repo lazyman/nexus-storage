@@ -9,7 +9,7 @@
   <parent>
   	<artifactId>pom5</artifactId>
   	<groupId>cn.com.lazyhome.pom</groupId>
-  	<version>2-SNAPSHOT</version>
+  	<version>3-SNAPSHOT</version>
   </parent>
   <build>
   	<defaultGoal>deploy</defaultGoal>
@@ -58,11 +58,6 @@
   		<artifactId>proxool</artifactId>
   		<version>0.9.1</version>
   		<scope>runtime</scope>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.hibernate</groupId>
-  		<artifactId>hibernate</artifactId>
-  		<version>3.2.7.ga</version>
   	</dependency>
   	<dependency>
   		<groupId>net.sourceforge.jtds</groupId>
