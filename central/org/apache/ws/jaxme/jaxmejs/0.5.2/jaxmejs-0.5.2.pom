@@ -1,0 +1,40 @@
+<?xml version="1.0"?><project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.apache.ws.jaxme</groupId>
+  <artifactId>jaxmejs</artifactId>
+  <name>JaxMe Java Source framework</name>
+  <version>0.5.2</version>
+  <url>http://ws.apache.org/jaxme</url>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <organization>
+    <name>Apache Software Foundation</name>
+    <url>http://www.apache.org/</url>
+  </organization>
+  <repositories>
+    <repository>
+      <id>apache-maven-snapshots</id>
+      <name>Apache Maven Snapshot Repository</name>
+      <url>http://people.apache.org/repo/m2-snapshot-repository/</url>
+    </repository>
+  </repositories>
+  <distributionManagement>
+    <repository>
+      <id>apache-maven</id>
+      <name>Apache Maven Repository</name>
+      <url>scp://people.apache.org/www/people.apache.org/repo/m2-ibiblio-rsync-repository</url>
+    </repository>
+    <snapshotRepository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>apache-maven-snapshots</id>
+      <name>Apache Maven Snapshot Repository</name>
+      <url>scp://people.apache.org/www/people.apache.org/repo/m2-snapshot-repository</url>
+    </snapshotRepository>
+    <status>deployed</status>
+  </distributionManagement>
+</project>
