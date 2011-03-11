@@ -1,0 +1,18 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>jblanket</groupId>
+  <artifactId>jblanket</artifactId>
+  <name>JBlanket</name>
+  <version>4.3.0402</version>
+  <licenses>
+    <license>
+      <name>GNU GPL, Version 2</name>
+      <url>http://www.fsf.org/licenses/gpl.txt</url>
+      <comments></comments>
+    </license>
+  </licenses>
+  <organization>
+    <name>CSDL</name>
+    <url>http://csdl.ics.hawaii.edu/</url>
+  </organization>
+</project>

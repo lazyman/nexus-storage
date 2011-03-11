@@ -61,11 +61,5 @@
       <policy>release</policy>
       <url>@rootUrl@/content/repositories/java.net-m1-m2</url>
     </memberRepository>
-    <memberRepository>
-      <id>jboss-repository</id>
-      <name>jboss repository</name>
-      <policy>release</policy>
-      <url>@rootUrl@/content/repositories/jboss-repository</url>
-    </memberRepository>
   </memberRepositories>
 </repository-metadata>

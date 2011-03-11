@@ -1,0 +1,98 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>jfree</groupId>
+  <artifactId>jfreechart</artifactId>
+  <version>1.0.0</version>
+  <url>http://www.jfree.org/jfreechart</url>
+  <organization>
+   <name>JFree.org</name>
+    <url>http://www.jfree.org/</url>
+  </organization>
+  <inceptionYear>2001</inceptionYear>
+
+  <description>
+    JFreeChart is a class library, written in Java, for generating charts.
+    Utilising the Java2D APIs, it currently supports bar charts, pie charts,
+    line charts, XY-plots and time series plots.
+  </description>
+
+    <scm>
+    <url>http://www.jfree.org/cvs</url>
+     <connection>
+      scm:cvs:pserver:anonymous@cvs.sourceforge.net:/cvsroot/jfreechart:jfreechart
+    </connection> 
+</scm>
+
+
+<mailingLists>
+    <mailingList>
+      <name>JFreeChart Developer List</name>
+      <subscribe>
+        jfreechart-dev-request@lists.sourceforge.net?subject=subscribe
+      </subscribe>
+      <unsubscribe>
+        jfreechart-dev-request@lists.sourceforge.net?subject=unsubscribe
+      </unsubscribe>
+      <archive>
+        http://sourceforge.net/mailarchive/forum.php?forum=jfreechart-dev
+      </archive>
+    </mailingList>
+  </mailingLists>
+
+  <developers>
+    <!--
+    For an up to date list of developers and contributors have a look at
+    the project info implementations.
+    -->
+  </developers>
+
+  <licenses>
+    <license>
+      <name>GNU Lesser General Public Licence</name>
+      <url>http://www.gnu.org/licenses/lgpl.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <dependencies>
+    <dependency>
+      <groupId>jfree</groupId>
+      <artifactId>jcommon</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8</version>
+    </dependency>
+
+<!-- MEV-284
+    <dependency>
+      <groupId>gnujaxp</groupId>
+      <artifactId>gnujaxp</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+-->
+  </dependencies>
+ <build> 
+<plugins>     
+<plugin>
+    <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>generate-sources</phase>
+            <configuration>
+              <tasks>
+              <unzip src="jfreechart-1.0.0.jar" dest="target/classes"></unzip>       
+              </tasks>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+</build>
+</project>
