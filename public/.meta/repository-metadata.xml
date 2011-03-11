@@ -26,22 +26,10 @@
       <url>@rootUrl@/content/repositories/thirdparty</url>
     </memberRepository>
     <memberRepository>
-      <id>java.net-m2</id>
-      <name>java.net - Maven 2</name>
-      <policy>release</policy>
-      <url>@rootUrl@/content/repositories/java.net-m2</url>
-    </memberRepository>
-    <memberRepository>
       <id>central</id>
       <name>Maven Central</name>
       <policy>release</policy>
       <url>@rootUrl@/content/repositories/central</url>
-    </memberRepository>
-    <memberRepository>
-      <id>java.net-m1-m2</id>
-      <name>java.net-m1 M2 shadow</name>
-      <policy>release</policy>
-      <url>@rootUrl@/content/repositories/java.net-m1-m2</url>
     </memberRepository>
     <memberRepository>
       <id>google</id>
@@ -60,6 +48,18 @@
       <name>Codehaus Snapshots</name>
       <policy>snapshot</policy>
       <url>@rootUrl@/content/repositories/codehaus-snapshots</url>
+    </memberRepository>
+    <memberRepository>
+      <id>java.net-m2</id>
+      <name>java.net - Maven 2</name>
+      <policy>release</policy>
+      <url>@rootUrl@/content/repositories/java.net-m2</url>
+    </memberRepository>
+    <memberRepository>
+      <id>java.net-m1-m2</id>
+      <name>java.net-m1 M2 shadow</name>
+      <policy>release</policy>
+      <url>@rootUrl@/content/repositories/java.net-m1-m2</url>
     </memberRepository>
     <memberRepository>
       <id>jboss-repository</id>

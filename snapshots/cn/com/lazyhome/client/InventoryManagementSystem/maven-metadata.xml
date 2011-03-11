@@ -3,9 +3,11 @@
   <groupId>cn.com.lazyhome.client</groupId>
   <artifactId>InventoryManagementSystem</artifactId>
   <versioning>
+    <latest>0.0.1-SNAPSHOT</latest>
+    <release></release>
     <versions>
       <version>0.0.1-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20110209122510</lastUpdated>
+    <lastUpdated>20110311134309</lastUpdated>
   </versioning>
 </metadata>
