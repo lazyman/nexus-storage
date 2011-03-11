@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository-metadata>
+  <version>1.0.0</version>
+  <url>http://google-maven-repository.googlecode.com/svn/repository/</url>
+  <id>google</id>
+  <name>Google Code</name>
+  <layout>maven2</layout>
+  <policy>release</policy>
+  <localUrl>@rootUrl@/content/repositories/google</localUrl>
+</repository-metadata>
