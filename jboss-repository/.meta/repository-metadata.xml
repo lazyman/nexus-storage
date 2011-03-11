@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository-metadata>
+  <version>1.0.0</version>
+  <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+  <id>jboss-repository</id>
+  <name>jboss repository</name>
+  <layout>maven2</layout>
+  <policy>release</policy>
+  <localUrl>@rootUrl@/content/repositories/jboss-repository</localUrl>
+</repository-metadata>

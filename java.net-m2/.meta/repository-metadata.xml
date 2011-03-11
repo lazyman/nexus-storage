@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository-metadata>
+  <version>1.0.0</version>
+  <url>http://download.java.net/maven/2/</url>
+  <id>java.net-m2</id>
+  <name>java.net - Maven 2</name>
+  <layout>maven2</layout>
+  <policy>release</policy>
+  <localUrl>@rootUrl@/content/repositories/java.net-m2</localUrl>
+</repository-metadata>

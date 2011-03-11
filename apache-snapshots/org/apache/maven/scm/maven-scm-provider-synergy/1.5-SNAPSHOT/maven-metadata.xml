@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.apache.maven.scm</groupId>
+  <artifactId>maven-scm-provider-synergy</artifactId>
+  <version>1.5-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20110206.024303</timestamp>
+      <buildNumber>46</buildNumber>
+    </snapshot>
+    <lastUpdated>20110206024303</lastUpdated>
+  </versioning>
+</metadata>

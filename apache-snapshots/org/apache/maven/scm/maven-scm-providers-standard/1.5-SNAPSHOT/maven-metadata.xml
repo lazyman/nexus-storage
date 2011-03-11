@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.apache.maven.scm</groupId>
+  <artifactId>maven-scm-providers-standard</artifactId>
+  <version>1.5-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20110205.224353</timestamp>
+      <buildNumber>17</buildNumber>
+    </snapshot>
+    <lastUpdated>20110205224353</lastUpdated>
+  </versioning>
+</metadata>

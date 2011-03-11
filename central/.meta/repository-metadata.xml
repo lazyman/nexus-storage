@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository-metadata>
+  <version>1.0.0</version>
+  <url>http://repo1.maven.org/maven2/</url>
+  <id>central</id>
+  <name>Maven Central</name>
+  <layout>maven2</layout>
+  <policy>release</policy>
+  <mirrors>
+    <!-- mirror>
+      <id>cica.es</id>
+      <url>http://ftp.cica.es/mirrors/maven2</url>
+    </mirror -->
+    <mirror>
+      <id>repo.exist.com</id>
+      <url>http://repo.exist.com/maven2</url>
+    </mirror>
+    <mirror>
+      <id>ibiblio.org</id>
+      <url>http://mirrors.ibiblio.org/pub/mirrors/maven2</url>
+    </mirror>
+    <mirror>
+      <id>ibiblio.net</id>
+      <url>http://www.ibiblio.net/pub/packages/maven2</url>
+    </mirror>
+    <!-- mirror>
+      <id>mirror.netcologne.de</id>
+      <url>http://mirror.netcologne.de/maven2</url>
+    </mirror -->
+    <mirror>
+      <id>uk.maven.org</id>
+      <url>http://uk.maven.org/maven2</url>
+    </mirror>
+
+  </mirrors>
+</repository-metadata>

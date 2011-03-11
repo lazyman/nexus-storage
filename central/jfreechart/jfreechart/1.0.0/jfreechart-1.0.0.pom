@@ -1,0 +1,13 @@
+<project>
+  <modelVersion>4.0.0</modelVersion> 
+  <groupId>jfreechart</groupId> 
+  <artifactId>jfreechart</artifactId> 
+  <version>1.0.0</version> 
+  <distributionManagement>
+    <relocation>
+      <groupId>jfree</groupId> 
+      <artifactId>jfreechart</artifactId> 
+      <version>1.0.0</version> 
+    </relocation>
+  </distributionManagement>
+</project>
