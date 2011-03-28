@@ -1,0 +1,98 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <groupId>org.kohsuke.stapler</groupId>
+  <artifactId>stapler-adjuncts</artifactId>
+  <packaging>pom</packaging>
+  <version>1</version>
+
+  <name>Parent POM for Stapler adjunts</name>
+  <description>A collection of libaries for packaging 3rd party JavaScript libraries as adjuncts</description>
+  
+  <organization>
+    <url>http://www.java.net/</url>
+  </organization>
+  
+  <mailingLists>
+    <mailingList>
+      <name>Users List</name>
+      <subscribe>users-subscribe@stapler.dev.java.net</subscribe>
+      <unsubscribe>users-unsubscribe@stapler.dev.java.net</unsubscribe>
+      <archive>https://stapler.dev.java.net/servlets/SummarizeList?listName=users</archive>
+    </mailingList>
+    <mailingList>
+      <name>Issues List</name>
+      <subscribe>issues-subscribe@stapler.dev.java.net</subscribe>
+      <unsubscribe>issues-unsubscribe@stapler.dev.java.net</unsubscribe>
+      <archive>https://stapler.dev.java.net/servlets/SummarizeList?listName=issues</archive>
+    </mailingList>
+  </mailingLists>
+  
+  <scm>
+    <connection>scm:svn:https://svn.dev.java.net/svn/stapler/trunk/adjuncts</connection>
+    <developerConnection>scm:svn:https://svn.dev.java.net/svn/stapler/trunk/adjuncts</developerConnection>
+    <url>https://stapler.dev.java.net/source/browse/stapler/trunk/adjuncts/</url>
+  </scm>
+
+  <distributionManagement>
+    <repository>
+      <id>java.net</id>
+      <uniqueVersion>false</uniqueVersion>
+      <url>java-net:/maven2-repository/trunk/repository/</url>
+    </repository>
+    <site>
+      <id>stapler-www</id>
+      <url>java-net:/stapler/trunk/www/adjuncts/</url>
+    </site>
+  </distributionManagement>
+
+  <developers>
+    <developer>
+      <name>Kohsuke Kawaguchi</name>
+      <id>kohsuke</id>
+      <email>kk@kohsuke.org</email>
+    </developer>
+  </developers>
+  
+  <repositories>
+    <repository>
+      <id>java.net2</id>
+      <url>http://download.java.net/maven/2/</url>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>java.net2</id>
+      <url>http://download.java.net/maven/2/</url>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.0-beta-9</version>
+        <configuration>
+          <arguments>-P release</arguments>
+          <remoteTagging>true</remoteTagging>
+        </configuration>
+      </plugin>
+    </plugins>
+    
+    <extensions>
+      <extension>
+        <groupId>org.jvnet.wagon-svn</groupId>
+        <artifactId>wagon-svn</artifactId>
+        <version>1.9</version>
+      </extension>
+    </extensions>
+  </build>
+</project>

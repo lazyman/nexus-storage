@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.jvnet.robust-http-client</groupId>
+  <artifactId>robust-http-client</artifactId>
+  <packaging>jar</packaging>
+  <version>1.1</version>
+  <name>Robust HTTP client library</name>
+  <url>http://maven.apache.org</url>
+
+  <scm>
+    <connection>scm:svn:https://svn.dev.java.net/svn/robust-http-client/tags/robust-http-client-1.1</connection>
+    <developerConnection>scm:svn:https://svn.dev.java.net/svn/robust-http-client/tags/robust-http-client-1.1</developerConnection>
+    <url>https://robust-http-client.dev.java.net/source/browse/robust-http-client/tags/robust-http-client-1.1</url>
+  </scm>
+
+  <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>local-repository</id>
+      <url>svn:https://svn.dev.java.net/svn/maven2-repository/trunk/repository/</url>
+    </repository>
+    <site>
+      <id>local</id>
+      <url>svn:https://svn.dev.java.net/svn/robust-http-client/trunk/www/</url>
+    </site>
+  </distributionManagement>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-idea-plugin</artifactId>
+        <configuration>
+          <jdkName>JDK1.5</jdkName>
+          <downloadSources>true</downloadSources>
+        </configuration>
+      </plugin>
+    </plugins>
+    
+    <extensions>
+      <extension>
+        <groupId>org.jvnet.wagon-svn</groupId>
+        <artifactId>wagon-svn</artifactId>
+        <version>1.9</version>
+      </extension>
+    </extensions>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>1.4</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <licenses>
+    <license>
+        <name>MIT license</name>
+        <url>http://www.opensource.org/licenses/mit-license.php</url>
+        <distribution>repo</distribution>
+    </license>
+  </licenses>
+</project>

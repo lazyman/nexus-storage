@@ -1,0 +1,169 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <groupId>org.kohsuke.stapler</groupId>
+  <artifactId>stapler-parent</artifactId>
+  <packaging>pom</packaging>
+  <version>1.143</version>
+
+  <name>Stapler POM</name>
+  <description>Stapler HTTP request handling engine</description>
+  
+  <modules>
+    <module>core</module>
+    <module>jsp</module>
+    <module>jelly</module>
+    <module>groovy</module>
+  </modules>
+
+  <organization>
+    <url>http://www.java.net/</url>
+  </organization>
+  
+  <mailingLists>
+    <mailingList>
+      <name>Users List</name>
+      <subscribe>users-subscribe@stapler.dev.java.net</subscribe>
+      <unsubscribe>users-unsubscribe@stapler.dev.java.net</unsubscribe>
+      <archive>https://stapler.dev.java.net/servlets/SummarizeList?listName=users</archive>
+    </mailingList>
+    <mailingList>
+      <name>Issues List</name>
+      <subscribe>issues-subscribe@stapler.dev.java.net</subscribe>
+      <unsubscribe>issues-unsubscribe@stapler.dev.java.net</unsubscribe>
+      <archive>https://stapler.dev.java.net/servlets/SummarizeList?listName=issues</archive>
+    </mailingList>
+    <mailingList>
+      <name>CVS List</name>
+      <subscribe>cvs-subscribe@stapler.dev.java.net</subscribe>
+      <unsubscribe>cvs-unsubscribe@stapler.dev.java.net</unsubscribe>
+      <archive>https://stapler.dev.java.net/servlets/SummarizeList?listName=cvs</archive>
+    </mailingList>
+  </mailingLists>
+  
+  <scm>
+    <connection>scm:svn:https://svn.dev.java.net/svn/stapler/tags/stapler-parent-1.143</connection>
+    <developerConnection>scm:svn:https://svn.dev.java.net/svn/stapler/tags/stapler-parent-1.143</developerConnection>
+    <url>https://stapler.dev.java.net/source/browse/stapler/tags/stapler-parent-1.143</url>
+  </scm>
+
+  <distributionManagement>
+    <repository>
+      <id>java.net</id>
+      <uniqueVersion>false</uniqueVersion>
+      <url>java-net:/maven2-repository/trunk/repository/</url>
+    </repository>
+    <site>
+      <id>stapler-www</id>
+      <url>java-net:/stapler/trunk/www/</url>
+    </site>
+  </distributionManagement>
+
+  <developers>
+    <developer>
+      <name>Kohsuke Kawaguchi</name>
+      <id>kohsuke</id>
+      <email>kk@kohsuke.org</email>
+    </developer>
+  </developers>
+  
+  <repositories>
+    <repository>
+      <id>java.net2</id>
+      <url>http://download.java.net/maven/2/</url>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>java.net2</id>
+      <url>http://download.java.net/maven/2/</url>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.jvnet.fix1600</groupId>
+        <artifactId>fix1600</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>fix</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.0-beta-9</version>
+        <configuration>
+          <arguments>-P release</arguments>
+          <remoteTagging>true</remoteTagging>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.jvnet.maven-jellydoc-plugin</groupId>
+        <artifactId>maven-jellydoc-plugin</artifactId>
+        <version>1.2</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <configuration>
+              <rules>
+                <requireJavaVersion><!-- require JDK6 for META-INF/services -->
+                  <version>[1.6.0,]</version>
+                </requireJavaVersion>
+              </rules>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+    
+    <extensions>
+      <extension>
+        <groupId>org.jvnet.wagon-svn</groupId>
+        <artifactId>wagon-svn</artifactId>
+        <version>1.9</version>
+      </extension>
+    </extensions>
+  </build>
+
+  <reporting>
+    <plugins>
+      <plugin>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>license</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+    </plugins>
+  </reporting>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.kohsuke.metainf-services</groupId>
+      <artifactId>metainf-services</artifactId>
+      <version>1.1</version>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
+</project>
+
