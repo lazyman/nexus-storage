@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Different versions of Maven comes with slightly different META-INF/plexus/components.xml,
+  so for us to intercept them correctly, we need to use different components.xml ourselves.
+
+  This jar hosts such components.xml for Maven 2.1. main/maven-interceptor contains
+  the interception code as well as the components.xml for Maven 2.0.x
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>extras</artifactId>
+    <groupId>org.jvnet.hudson</groupId>
+    <version>1.7</version>
+  </parent>
+  <groupId>org.jvnet.hudson</groupId>
+  <artifactId>maven2.1-interceptor</artifactId>
+  <version>1.2</version>
+  <name>maven2.1-interceptor</name>
+  <description>Plexus component descriptor to override key Maven components in 2.1</description>
+
+  <scm>
+    <connection>scm:svn:https://guest@svn.dev.java.net/svn/hudson/tags/maven2.1-interceptor-1.2</connection>
+    <developerConnection>scm:svn:https://svn.dev.java.net/svn/hudson/tags/maven2.1-interceptor-1.2</developerConnection>
+    <url>https://hudson.dev.java.net/source/browse/hudson/tags/maven2.1-interceptor-1.2</url>
+  </scm>
+</project>

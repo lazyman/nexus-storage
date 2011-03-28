@@ -3,7 +3,7 @@
   <version>1.0.0</version>
   <url>@rootUrl@/content/groups/public-snapshots</url>
   <id>public-snapshots</id>
-  <name>Public Snapshot Repositories</name>
+  <name>Snapshot Repositories</name>
   <layout>maven2</layout>
   <policy>mixed</policy>
   <memberRepositories>
@@ -18,6 +18,18 @@
       <name>Codehaus Snapshots</name>
       <policy>snapshot</policy>
       <url>@rootUrl@/content/repositories/codehaus-snapshots</url>
+    </memberRepository>
+    <memberRepository>
+      <id>hudson.snapshots</id>
+      <name>hudson.snapshots</name>
+      <policy>snapshot</policy>
+      <url>@rootUrl@/content/repositories/hudson.snapshots</url>
+    </memberRepository>
+    <memberRepository>
+      <id>snapshots</id>
+      <name>Snapshots</name>
+      <policy>snapshot</policy>
+      <url>@rootUrl@/content/repositories/snapshots</url>
     </memberRepository>
   </memberRepositories>
 </repository-metadata>

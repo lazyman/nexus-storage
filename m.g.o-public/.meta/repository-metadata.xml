@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository-metadata>
+  <version>1.0.0</version>
+  <url>http://maven.glassfish.org/content/groups/public</url>
+  <id>public</id>
+  <name>Hudson Repositories</name>
+  <layout>maven2</layout>
+  <policy>mixed</policy>
+  <memberRepositories>
+    <memberRepository>
+      <id>java.net2</id>
+      <name>java.net M2</name>
+      <policy>release</policy>
+      <url>http://maven.glassfish.org/content/repositories/java.net2</url>
+    </memberRepository>
+    <memberRepository>
+      <id>java.net1-adapted</id>
+      <name>java.net M1 (adapted)</name>
+      <policy>release</policy>
+      <url>http://maven.glassfish.org/content/repositories/java.net1-adapted</url>
+    </memberRepository>
+    <memberRepository>
+      <id>central</id>
+      <name>Maven Central</name>
+      <policy>release</policy>
+      <url>http://maven.glassfish.org/content/repositories/central</url>
+    </memberRepository>
+    <memberRepository>
+      <id>atlassian-release</id>
+      <name>Atlassian Releases</name>
+      <policy>release</policy>
+      <url>http://maven.glassfish.org/content/repositories/atlassian-release</url>
+    </memberRepository>
+    <memberRepository>
+      <id>atlassian-contrib-releases</id>
+      <name>Atlassian Contrib Releases</name>
+      <policy>release</policy>
+      <url>http://maven.glassfish.org/content/repositories/atlassian-contrib-releases</url>
+    </memberRepository>
+    <memberRepository>
+      <id>milton</id>
+      <name>milton</name>
+      <policy>release</policy>
+      <url>http://maven.glassfish.org/content/repositories/milton</url>
+    </memberRepository>
+    <memberRepository>
+      <id>jclouds</id>
+      <name>jclouds release</name>
+      <policy>release</policy>
+      <url>http://maven.glassfish.org/content/repositories/jclouds</url>
+    </memberRepository>
+    <memberRepository>
+      <id>maven.hudson-labs.org</id>
+      <name>maven.hudson-labs.org</name>
+      <policy>release</policy>
+      <url>http://maven.glassfish.org/content/repositories/maven.hudson-labs.org</url>
+    </memberRepository>
+    <memberRepository>
+      <id>infradna</id>
+      <name>InfraDNA</name>
+      <policy>release</policy>
+      <url>http://maven.glassfish.org/content/repositories/infradna</url>
+    </memberRepository>
+    <memberRepository>
+      <id>sonatype-forge</id>
+      <name>Sonatype Forge</name>
+      <policy>release</policy>
+      <url>http://maven.glassfish.org/content/repositories/sonatype-forge</url>
+    </memberRepository>
+  </memberRepositories>
+</repository-metadata>

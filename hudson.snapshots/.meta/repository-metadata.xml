@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository-metadata>
+  <version>1.0.0</version>
+  <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+  <id>hudson.snapshots</id>
+  <name>hudson.snapshots</name>
+  <layout>maven2</layout>
+  <policy>snapshot</policy>
+  <localUrl>@rootUrl@/content/repositories/hudson.snapshots</localUrl>
+</repository-metadata>
