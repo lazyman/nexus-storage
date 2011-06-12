@@ -14,6 +14,12 @@
       <url>@rootUrl@/content/repositories/releases</url>
     </memberRepository>
     <memberRepository>
+      <id>snapshots</id>
+      <name>Snapshots</name>
+      <policy>snapshot</policy>
+      <url>@rootUrl@/content/repositories/snapshots</url>
+    </memberRepository>
+    <memberRepository>
       <id>thirdparty</id>
       <name>3rd party</name>
       <policy>release</policy>
@@ -38,16 +44,22 @@
       <url>@rootUrl@/content/repositories/java.net-m1-m2</url>
     </memberRepository>
     <memberRepository>
-      <id>m.g.o-public</id>
-      <name>m.g.o-public</name>
-      <policy>release</policy>
-      <url>@rootUrl@/content/repositories/m.g.o-public</url>
-    </memberRepository>
-    <memberRepository>
       <id>google</id>
       <name>Google Code</name>
       <policy>release</policy>
       <url>@rootUrl@/content/repositories/google</url>
+    </memberRepository>
+    <memberRepository>
+      <id>apache-snapshots</id>
+      <name>Apache Snapshots</name>
+      <policy>snapshot</policy>
+      <url>@rootUrl@/content/repositories/apache-snapshots</url>
+    </memberRepository>
+    <memberRepository>
+      <id>codehaus-snapshots</id>
+      <name>Codehaus Snapshots</name>
+      <policy>snapshot</policy>
+      <url>@rootUrl@/content/repositories/codehaus-snapshots</url>
     </memberRepository>
   </memberRepositories>
 </repository-metadata>
