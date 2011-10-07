@@ -2,6 +2,11 @@
 <metadata>
   <plugins>
     <plugin>
+      <name>Maven ACR Plugin</name>
+      <prefix>acr</prefix>
+      <artifactId>maven-acr-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Ant Plugin</name>
       <prefix>ant</prefix>
       <artifactId>maven-ant-plugin</artifactId>
@@ -92,6 +97,11 @@
       <artifactId>maven-ear-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Maven EAR Plugin</name>
+      <prefix>ear</prefix>
+      <artifactId>maven-ear-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Eclipse Plugin</name>
       <prefix>eclipse</prefix>
       <artifactId>maven-eclipse-plugin</artifactId>
@@ -113,6 +123,11 @@
     </plugin>
     <plugin>
       <name>maven-gpg-plugin Maven Mojo</name>
+      <prefix>gpg</prefix>
+      <artifactId>maven-gpg-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Maven GPG Plugin</name>
       <prefix>gpg</prefix>
       <artifactId>maven-gpg-plugin</artifactId>
     </plugin>
@@ -238,6 +253,11 @@
     </plugin>
     <plugin>
       <name>Maven Site plugin</name>
+      <prefix>site</prefix>
+      <artifactId>maven-site-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Maven Site Plugin</name>
       <prefix>site</prefix>
       <artifactId>maven-site-plugin</artifactId>
     </plugin>

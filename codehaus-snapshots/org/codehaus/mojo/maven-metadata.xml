@@ -22,6 +22,11 @@
       <artifactId>appassembler-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Appassembler :: Maven Plug-In</name>
+      <prefix>appassembler</prefix>
+      <artifactId>appassembler-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Appfuse Maven Plugin</name>
       <prefix>appfuse</prefix>
       <artifactId>appfuse-maven-plugin</artifactId>
@@ -53,6 +58,11 @@
     </plugin>
     <plugin>
       <name>Maven Build Helper Plugin</name>
+      <prefix>build-helper</prefix>
+      <artifactId>build-helper-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Build Helper Maven Plugin</name>
       <prefix>build-helper</prefix>
       <artifactId>build-helper-maven-plugin</artifactId>
     </plugin>
@@ -98,6 +108,11 @@
     </plugin>
     <plugin>
       <name>Maven Clirr Plugin</name>
+      <prefix>clirr</prefix>
+      <artifactId>clirr-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Clirr Maven Plugin</name>
       <prefix>clirr</prefix>
       <artifactId>clirr-maven-plugin</artifactId>
     </plugin>
@@ -182,6 +197,11 @@
       <artifactId>findbugs-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>FindBugs Maven Plugin</name>
+      <prefix>findbugs</prefix>
+      <artifactId>findbugs-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Fit Maven Plugin</name>
       <prefix>fit</prefix>
       <artifactId>fit-maven-plugin</artifactId>
@@ -262,6 +282,11 @@
       <artifactId>jboss-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>JBoss Maven Plugin</name>
+      <prefix>jboss</prefix>
+      <artifactId>jboss-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>JBoss Packaging Maven Plugin</name>
       <prefix>jboss-packaging</prefix>
       <artifactId>jboss-packaging-maven-plugin</artifactId>
@@ -338,6 +363,11 @@
     </plugin>
     <plugin>
       <name>Maven Native Plugin</name>
+      <prefix>native</prefix>
+      <artifactId>native-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Native Maven Plugin</name>
       <prefix>native</prefix>
       <artifactId>native-maven-plugin</artifactId>
     </plugin>

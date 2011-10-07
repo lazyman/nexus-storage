@@ -1,0 +1,54 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+
+<!--
+<WISPAccessGatewayParam xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespace SchemaLocation="http://www.acmewisp.com/WISPAccessGatewayParam.xsd">
+<Proxy>
+<MessageType>110</MessageType>
+<NextURL>http://cmccportal.ctclchina.com/gis.php?Hotspot_operator=CMCC&Hotspot_location=beijing&Nas_id=0002.0576.571.00&Nas_ip=221.131.211.30&User_ip=111.3.102.113&Portal_ip=221.176.1.140:80&Client_type=wispr</NextURL>
+<ResponseCode>200</ResponseCode>
+<Delay>2</Delay>
+</Proxy>
+</WISPAccessGatewayParam>
+-->
+
+<!-- cmcccs|login_req||-->
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta http-equiv="Cache-Control" content="no-cache">
+<title>中国移动 Wlan</title>
+
+
+</head>
+
+
+<frameset rows='1500,*' border='0' framespacing='0' frameborder=0 marginwidth='0' marginheight='0' scrolling="yes">
+
+<frame src='https://221.176.1.140:443/input.php?wlanacip=221.131.211.30&wlanacname=0002.0576.571.00&wlanuserip=111.3.102.113&wlanacssid=CMCC&fromlocation=index' name='input' scrolling='yes' marginwidth='0' marginheight='0'> 
+</frame> 
+
+<noframes>
+<body>
+<form name="loginform" action="https://221.176.1.140/wlan/index.php" method="post">
+
+<input  type="hidden" name="wlanacname" value="0002.0576.571.00">
+<input  type="hidden" name="wlanuserip" value="111.3.102.113">
+<input  type="hidden" name="wlanacssid" value="CMCC">
+<input  type="hidden" name="actiontype" value="LOGIN">
+<input  type="hidden" name="languagetype" value="">
+<input  type="hidden" name="logonsessid" value="">
+</form>
+
+
+</body>
+</noframes>
+</frameset>
+
+</html>

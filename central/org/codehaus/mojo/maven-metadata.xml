@@ -97,6 +97,11 @@
       <artifactId>cobertura-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Mojo's Maven plugin for Cobertura</name>
+      <prefix>cobertura</prefix>
+      <artifactId>cobertura-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Commons Attributes Plugin</name>
       <prefix>commons-attributes</prefix>
       <artifactId>commons-attributes-maven-plugin</artifactId>
@@ -272,6 +277,11 @@
       <artifactId>latex-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>License Maven Plugin</name>
+      <prefix>license</prefix>
+      <artifactId>license-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Local Configuration Plugin</name>
       <prefix>local-config</prefix>
       <artifactId>local-config-maven-plugin</artifactId>
@@ -425,6 +435,11 @@
       <name>Shell Script Executor Plugin</name>
       <prefix>shell</prefix>
       <artifactId>shell-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Ship Maven Plugin</name>
+      <prefix>ship</prefix>
+      <artifactId>ship-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Super Helpful Integration Testing ThingY (SHITTY) Maven Plugin</name>
