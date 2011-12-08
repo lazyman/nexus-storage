@@ -117,6 +117,11 @@
       <artifactId>dbunit-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Maven Database Upgrade Plugin</name>
+      <prefix>dbupgrade</prefix>
+      <artifactId>dbupgrade-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Dependency Maven Plugin</name>
       <prefix>dependency</prefix>
       <artifactId>dependency-maven-plugin</artifactId>
@@ -143,6 +148,11 @@
     </plugin>
     <plugin>
       <name>Maven Exec Plugin</name>
+      <prefix>exec</prefix>
+      <artifactId>exec-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Exec Maven Plugin</name>
       <prefix>exec</prefix>
       <artifactId>exec-maven-plugin</artifactId>
     </plugin>
@@ -222,6 +232,11 @@
       <artifactId>jaxb2-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Maven JAXB 2.1 Plugin</name>
+      <prefix>jaxb2</prefix>
+      <artifactId>jaxb2-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven JAXWS 2.x Plugin</name>
       <prefix>jaxws</prefix>
       <artifactId>jaxws-maven-plugin</artifactId>
@@ -250,6 +265,11 @@
       <name>JRuby Mojo Support</name>
       <prefix>jruby</prefix>
       <artifactId>jruby-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>JSLint Maven Plugin</name>
+      <prefix>jslint</prefix>
+      <artifactId>jslint-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Maven Jspc plugin</name>
@@ -477,6 +497,11 @@
       <artifactId>sql-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>SQL Maven Plugin</name>
+      <prefix>sql</prefix>
+      <artifactId>sql-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>SQLJ Maven Plugin</name>
       <prefix>sqlj</prefix>
       <artifactId>sqlj-maven-plugin</artifactId>
@@ -540,6 +565,11 @@
       <name>Maven Webstart Plugin</name>
       <prefix>webstart</prefix>
       <artifactId>webstart-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Canoo WebTest Maven Plugin</name>
+      <prefix>webtest</prefix>
+      <artifactId>webtest-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>XDoclet Maven Plugin</name>

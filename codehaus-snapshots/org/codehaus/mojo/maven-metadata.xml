@@ -107,6 +107,11 @@
       <artifactId>chronos-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Chronos Report</name>
+      <prefix>chronos-report</prefix>
+      <artifactId>chronos-report-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Clirr Plugin</name>
       <prefix>clirr</prefix>
       <artifactId>clirr-maven-plugin</artifactId>
@@ -118,6 +123,11 @@
     </plugin>
     <plugin>
       <name>Cobertura Maven Plugin</name>
+      <prefix>cobertura</prefix>
+      <artifactId>cobertura-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Mojo's Maven plugin for Cobertura</name>
       <prefix>cobertura</prefix>
       <artifactId>cobertura-maven-plugin</artifactId>
     </plugin>
@@ -183,6 +193,11 @@
     </plugin>
     <plugin>
       <name>Maven Exec Plugin</name>
+      <prefix>exec</prefix>
+      <artifactId>exec-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Exec Maven Plugin</name>
       <prefix>exec</prefix>
       <artifactId>exec-maven-plugin</artifactId>
     </plugin>
@@ -277,6 +292,11 @@
       <artifactId>jaxb2-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Maven JAXB 2.1 Plugin</name>
+      <prefix>jaxb2</prefix>
+      <artifactId>jaxb2-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven JBoss plugin</name>
       <prefix>jboss</prefix>
       <artifactId>jboss-maven-plugin</artifactId>
@@ -307,6 +327,11 @@
       <artifactId>jruby-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>JavaScript Lint Maven Plugin</name>
+      <prefix>jslint</prefix>
+      <artifactId>jslint-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Jspc plugin</name>
       <prefix>jspc</prefix>
       <artifactId>jspc-maven-plugin</artifactId>
@@ -325,6 +350,11 @@
       <name>LaTeX Maven Plugin</name>
       <prefix>latex</prefix>
       <artifactId>latex-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>LESS CSS Maven Plugin</name>
+      <prefix>lesscss</prefix>
+      <artifactId>lesscss-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>License Maven Plugin</name>
@@ -538,6 +568,11 @@
     </plugin>
     <plugin>
       <name>SQL Plugin for Maven</name>
+      <prefix>sql</prefix>
+      <artifactId>sql-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>SQL Maven Plugin</name>
       <prefix>sql</prefix>
       <artifactId>sql-maven-plugin</artifactId>
     </plugin>

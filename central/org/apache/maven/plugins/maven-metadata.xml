@@ -37,6 +37,11 @@
       <artifactId>maven-changelog-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Maven Changelog Plugin</name>
+      <prefix>changelog</prefix>
+      <artifactId>maven-changelog-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Changes Report Plugin</name>
       <prefix>changes</prefix>
       <artifactId>maven-changes-plugin</artifactId>
@@ -152,6 +157,11 @@
       <artifactId>maven-invoker-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Maven JAR Plugin</name>
+      <prefix>jar</prefix>
+      <artifactId>maven-jar-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Jar Plugin</name>
       <prefix>jar</prefix>
       <artifactId>maven-jar-plugin</artifactId>
@@ -178,11 +188,21 @@
     </plugin>
     <plugin>
       <name>Maven 1.x Plugin</name>
-      <prefix>one</prefix>
+      <prefix>maven-one-plugin</prefix>
+      <artifactId>maven-one-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Maven One Plugin</name>
+      <prefix>maven-one-plugin</prefix>
       <artifactId>maven-one-plugin</artifactId>
     </plugin>
     <plugin>
       <name>maven-patch-plugin Maven Mojo</name>
+      <prefix>patch</prefix>
+      <artifactId>maven-patch-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Maven Patch Plugin</name>
       <prefix>patch</prefix>
       <artifactId>maven-patch-plugin</artifactId>
     </plugin>
@@ -193,6 +213,11 @@
     </plugin>
     <plugin>
       <name>Maven Plugin Plugin</name>
+      <prefix>plugin</prefix>
+      <artifactId>maven-plugin-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Maven PLUGIN Plugin</name>
       <prefix>plugin</prefix>
       <artifactId>maven-plugin-plugin</artifactId>
     </plugin>
@@ -220,6 +245,11 @@
       <name>Maven Reactor Plugin</name>
       <prefix>reactor</prefix>
       <artifactId>maven-reactor-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Maven Release plugin</name>
+      <prefix>release</prefix>
+      <artifactId>maven-release-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Maven Release Plugin</name>
@@ -252,9 +282,9 @@
       <artifactId>maven-shade-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Site plugin</name>
-      <prefix>site</prefix>
-      <artifactId>maven-site-plugin</artifactId>
+      <name>Maven Shade Plugin</name>
+      <prefix>shade</prefix>
+      <artifactId>maven-shade-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Maven Site Plugin</name>
@@ -262,7 +292,22 @@
       <artifactId>maven-site-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Maven Site plugin</name>
+      <prefix>site</prefix>
+      <artifactId>maven-site-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Maven Site Plugin 3</name>
+      <prefix>site</prefix>
+      <artifactId>maven-site-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Source Plugin</name>
+      <prefix>source</prefix>
+      <artifactId>maven-source-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Maven Source Plug-In</name>
       <prefix>source</prefix>
       <artifactId>maven-source-plugin</artifactId>
     </plugin>
@@ -290,6 +335,11 @@
       <name>Maven Verifier Plugin</name>
       <prefix>verifier</prefix>
       <artifactId>maven-verifier-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Maven WAR Plugin</name>
+      <prefix>war</prefix>
+      <artifactId>maven-war-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Maven War Plugin</name>
