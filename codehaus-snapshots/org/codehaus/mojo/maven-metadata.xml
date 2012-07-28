@@ -102,6 +102,11 @@
       <artifactId>changes-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Chronos JMeter</name>
+      <prefix>chronos-jmeter</prefix>
+      <artifactId>chronos-jmeter-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Chronos</name>
       <prefix>chronos</prefix>
       <artifactId>chronos-maven-plugin</artifactId>
@@ -110,6 +115,11 @@
       <name>Chronos Report</name>
       <prefix>chronos-report</prefix>
       <artifactId>chronos-report-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Ckjm Maven Mojo</name>
+      <prefix>ckjm</prefix>
+      <artifactId>ckjm-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Maven Clirr Plugin</name>
@@ -170,6 +180,16 @@
       <name>DITA Maven Plugin</name>
       <prefix>dita</prefix>
       <artifactId>dita-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>DITA Open Toolkit Maven Plugin</name>
+      <prefix>dita</prefix>
+      <artifactId>dita-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>XMLMind Dita Compiler Maven Plugin</name>
+      <prefix>ditac</prefix>
+      <artifactId>ditac-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Maven Docbook plugin</name>
@@ -327,6 +347,11 @@
       <artifactId>jruby-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>JavaScript Import Maven Plugin</name>
+      <prefix>js-import</prefix>
+      <artifactId>js-import-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>JavaScript Lint Maven Plugin</name>
       <prefix>jslint</prefix>
       <artifactId>jslint-maven-plugin</artifactId>
@@ -338,6 +363,11 @@
     </plugin>
     <plugin>
       <name>Maven Keytool Plugin</name>
+      <prefix>keytool</prefix>
+      <artifactId>keytool-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Keytool Maven Plugin</name>
       <prefix>keytool</prefix>
       <artifactId>keytool-maven-plugin</artifactId>
     </plugin>
@@ -385,6 +415,11 @@
       <name>Mock Repository Maven Plugin</name>
       <prefix>mock-repository</prefix>
       <artifactId>mock-repository-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Mock Repository Manager: Maven Plugin</name>
+      <prefix>mrm</prefix>
+      <artifactId>mrm-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Multimodule Build Optimizer Plugin</name>
@@ -642,7 +677,22 @@
       <artifactId>weblogic-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Mojo's Maven plugin for WebLogic</name>
+      <prefix>weblogic</prefix>
+      <artifactId>weblogic-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Web Minifier Maven Plugin</name>
+      <prefix>webminifier</prefix>
+      <artifactId>webminifier-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Webstart Plugin</name>
+      <prefix>webstart</prefix>
+      <artifactId>webstart-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>MWEBSTART :: Webstart Maven Plugin</name>
       <prefix>webstart</prefix>
       <artifactId>webstart-maven-plugin</artifactId>
     </plugin>

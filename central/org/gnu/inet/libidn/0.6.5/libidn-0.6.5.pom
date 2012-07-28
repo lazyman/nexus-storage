@@ -1,0 +1,19 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.gnu.inet</groupId>
+  <artifactId>libidn</artifactId>
+  <version>0.6.5</version>
+  <name>Libidn</name>
+  <url>http://www.gnu.org/software/libidn</url>
+  <description>GNU Libidn is an implementation of the Stringprep, Punycode and IDNA specifications defined by the IETF Internationalized Domain Names (IDN) working group, used for internationalized domain names.</description>
+  <licenses>
+    <license>
+      <name>GNU General Public License</name>
+      <url>http://www.gnu.org/licenses/gpl.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <url>http://josefsson.org/cgi-bin/viewcvs.cgi/libidn</url>
+  </scm>
+</project>

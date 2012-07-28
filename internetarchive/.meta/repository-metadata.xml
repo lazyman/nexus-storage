@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository-metadata>
+  <version>1.0.0</version>
+  <url>http://builds.archive.org:8080/maven2/</url>
+  <id>internetarchive</id>
+  <name>Internet Archive Maven Repository</name>
+  <layout>maven2</layout>
+  <policy>release</policy>
+  <localUrl>@rootUrl@/content/repositories/internetarchive</localUrl>
+</repository-metadata>

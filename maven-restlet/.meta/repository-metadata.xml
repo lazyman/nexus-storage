@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository-metadata>
+  <version>1.0.0</version>
+  <url>http://maven.restlet.org/</url>
+  <id>maven-restlet</id>
+  <name>Public online Restlet repository</name>
+  <layout>maven2</layout>
+  <policy>release</policy>
+  <localUrl>@rootUrl@/content/repositories/maven-restlet</localUrl>
+</repository-metadata>

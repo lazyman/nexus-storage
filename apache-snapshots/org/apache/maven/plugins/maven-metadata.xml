@@ -256,5 +256,15 @@
       <prefix>acr</prefix>
       <artifactId>maven-acr-plugin</artifactId>
     </plugin>
+    <plugin>
+      <name>maven-patch-tracker-plugin Maven Plugin</name>
+      <prefix>patch-tracker</prefix>
+      <artifactId>maven-patch-tracker-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>asf-svnpubsub-plugin Maven Plugin</name>
+      <prefix>asf-svnpubsub-plugin</prefix>
+      <artifactId>asf-svnpubsub-plugin</artifactId>
+    </plugin>
   </plugins>
 </metadata>

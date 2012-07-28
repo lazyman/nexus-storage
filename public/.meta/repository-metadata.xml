@@ -61,5 +61,23 @@
       <policy>snapshot</policy>
       <url>@rootUrl@/content/repositories/codehaus-snapshots</url>
     </memberRepository>
+    <memberRepository>
+      <id>maven-restlet</id>
+      <name>Public online Restlet repository</name>
+      <policy>release</policy>
+      <url>@rootUrl@/content/repositories/maven-restlet</url>
+    </memberRepository>
+    <memberRepository>
+      <id>internetarchive</id>
+      <name>Internet Archive Maven Repository</name>
+      <policy>release</policy>
+      <url>@rootUrl@/content/repositories/internetarchive</url>
+    </memberRepository>
+    <memberRepository>
+      <id>oracleReleases</id>
+      <name>Oracle Released Java Packages</name>
+      <policy>release</policy>
+      <url>@rootUrl@/content/repositories/oracleReleases</url>
+    </memberRepository>
   </memberRepositories>
 </repository-metadata>
