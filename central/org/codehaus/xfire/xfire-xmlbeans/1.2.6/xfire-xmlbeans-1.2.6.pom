@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <artifactId>xfire-parent</artifactId>
+    <groupId>org.codehaus.xfire</groupId>
+    <version>1.2.6</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>xfire-xmlbeans</artifactId>
+  <name>XFire XMLBeans Support</name>
+  <version>1.2.6</version>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>generate-test-sources</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <tasks>
+                <taskdef name="xmlbean" classname="org.apache.xmlbeans.impl.tool.XMLBean" classpathref="maven.test.classpath" />
+                <mkdir dir="${basedir}/target/xmlbeans-test-classes" />
+                <xmlbean classgendir="${basedir}/target/xmlbeans-test-classes" classpathref="maven.test.classpath" failonerror="true">
+				  <fileset dir="${basedir}/src/test-schemas" includes="**/*.xsd" />
+				</xmlbean>
+				<copy todir="${basedir}/target/test-classes">
+				  <fileset dir="${basedir}/target/xmlbeans-test-classes" />
+				</copy>
+              </tasks>
+              <testSourceRoot>${project.build.directory}/generated-test</testSourceRoot>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>org.codehaus.xfire</groupId>
+      <artifactId>xfire-aegis</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>xmlbeans</groupId>
+      <artifactId>xbean</artifactId>
+        <exclusions>
+          <exclusion>
+            <artifactId>xmlbeans-jsr173-api</artifactId>
+            <groupId>xmlbeans</groupId>
+          </exclusion>
+        </exclusions>
+    </dependency>
+  </dependencies>
+</project>

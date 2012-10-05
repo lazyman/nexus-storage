@@ -1,0 +1,6 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>jep</groupId>
+  <artifactId>jep</artifactId>
+  <version>2.24</version>
+</project>

@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <artifactId>xfire-parent</artifactId>
+    <groupId>org.codehaus.xfire</groupId>
+    <version>1.2.6</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>xfire-annotations</artifactId>
+  <name>XFire Annotations</name>
+  <version>1.2.6</version>
+  <description>Annotation support for XFire</description>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>generate-test-sources</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <tasks>
+                <taskdef classname="org.apache.commons.attributes.compiler.AttributeCompiler" classpathref="maven.test.classpath" name="attribute-compiler" />
+                <attribute-compiler destdir="${project.build.directory}/generated-source">
+                  <fileset includes="**/*.java" dir="${basedir}/src/main" />
+                  <fileset includes="**/*.java" dir="${basedir}/src/test" />
+                </attribute-compiler>
+              </tasks>
+              <testSourceRoot>${project.build.directory}/generated-source</testSourceRoot>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <repositories>
+    <repository>
+      <id>codehaus</id>
+      <name>Codehaus maven repository</name>
+      <url>http://dist.codehaus.org/</url>
+      <layout>legacy</layout>
+    </repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>org.codehaus.xfire</groupId>
+      <artifactId>xfire-aegis</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>xjavadoc</groupId>
+      <artifactId>xjavadoc</artifactId>
+      <version>1.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-beanutils</groupId>
+      <artifactId>commons-beanutils</artifactId>
+      <version>1.7.0</version>
+    </dependency>
+    <dependency>
+      <groupId>easymock</groupId>
+      <artifactId>easymock</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>commons-attributes</groupId>
+      <artifactId>commons-attributes-compiler</artifactId>
+      <version>2.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-attributes</groupId>
+      <artifactId>commons-attributes-api</artifactId>
+      <version>2.1</version>
+    </dependency>
+  </dependencies>
+</project>

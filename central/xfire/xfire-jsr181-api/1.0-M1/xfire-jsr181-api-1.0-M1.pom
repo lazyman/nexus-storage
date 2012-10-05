@@ -1,0 +1,36 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>xfire</groupId>
+  <artifactId>xfire-jsr181-api</artifactId>
+  <name>XFire JSR 181 API</name>
+  <version>1.0-M1</version>
+  <description>JSR 181 annotations.</description>
+  <url>http://xfire.codehaus.org</url>
+  <issueManagement>
+    <url>http://jira.codehaus.org/secure/BrowseProject.jspa?id=10750</url>
+  </issueManagement>
+  <inceptionYear>2006</inceptionYear>
+  <scm>
+    <connection>scm:cvs:pserver:anonymous@cvs.xfire.codehaus.org:/home/projects/xfire/scm:xfire-jsr181-api</connection>
+    <url>http://cvs.xfire.codehaus.org</url>
+  </scm>
+  <organization>
+    <name>Codehaus</name>
+    <url>http://www.codehaus.org/</url>
+  </organization>
+  <build>
+    <sourceDirectory>c:\eclipse\workspace\xfire-jsr181-api/src/main</sourceDirectory>
+  </build>
+  <distributionManagement>
+    <repository>
+      <id>default</id>
+      <name>Default Repository</name>
+      <url>xfire.codehaus.org//dist</url>
+    </repository>
+    <site>
+      <id>default</id>
+      <name>Default Site</name>
+      <url>scp://xfire.codehaus.org//home/projects/xfire/public_html/maven/xfire-1.0-M1</url>
+    </site>
+  </distributionManagement>
+</project>
