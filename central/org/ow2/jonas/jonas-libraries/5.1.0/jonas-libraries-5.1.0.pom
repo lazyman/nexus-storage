@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  - JOnAS: Java(TM) Open Application Server
+  - Copyright (C) 2007-2008 Bull S.A.S.
+  - Contact: jonas-team@objectweb.org
+  -
+  - This library is free software; you can redistribute it and/or
+  - modify it under the terms of the GNU Lesser General Public
+  - License as published by the Free Software Foundation; either
+  - version 2.1 of the License, or any later version.
+  -
+  - This library is distributed in the hope that it will be useful,
+  - but WITHOUT ANY WARRANTY; without even the implied warranty of
+  - MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  - Lesser General Public License for more details.
+  -
+  - You should have received a copy of the GNU Lesser General Public
+  - License along with this library; if not, write to the Free Software
+  - Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307
+  - USA
+  -
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  - $Id: pom.xml 18672 2009-09-21 09:12:28Z benoitf $
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <groupId>org.ow2.jonas</groupId>
+    <artifactId>jonas-modules</artifactId>
+    <version>5.1.0</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.ow2.jonas</groupId>
+  <artifactId>jonas-libraries</artifactId>
+  <packaging>pom</packaging>
+  <name>JOnAS :: Libraries</name>
+
+  <modules>
+    <module>jonas-bootstrap-loader</module>
+    <module>jonas-commons</module>
+    <module>jonas-deployment</module>
+    <module>jonas-ejb-container</module>
+    <module>jonas-ejb-container-svc</module>
+    <module>jonas-ejb2.1-ha</module>
+    <module>jonas-service-manager</module>
+    <module>jonas-mbeans</module>
+    <module>jonas-naming</module>
+    <module>jonas-timer</module>
+    <module>jonas-version</module>
+    <module>management</module>
+    <module>security</module>
+    <module>transaction</module>
+
+    <!-- Third party libraries wrapped in OSGi bundles -->
+    <module>externals</module>
+  </modules>
+
+  <!-- Dependency for all modules -->
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.felix</groupId>
+      <artifactId>org.osgi.core</artifactId>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+</project>

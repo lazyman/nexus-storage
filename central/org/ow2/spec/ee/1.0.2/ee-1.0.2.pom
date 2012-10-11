@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  - EasyBeans
+  - Copyright (C) 2007,2008 Bull S.A.S.
+  - Contact: easybeans@objectweb.org
+  -
+  - This library is free software; you can redistribute it and/or
+  - modify it under the terms of the GNU Lesser General Public
+  - License as published by the Free Software Foundation; either
+  - version 2.1 of the License, or (at your option) any later version.
+  -
+  - This library is distributed in the hope that it will be useful,
+  - but WITHOUT ANY WARRANTY; without even the implied warranty of
+  - MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  - Lesser General Public License for more details.
+  -
+  - You should have received a copy of the GNU Lesser General Public
+  - License along with this library; if not, write to the Free Software
+  - Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+  -
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  - $Id: pom.xml 4854 2009-03-30 07:43:52Z benoitf $
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <groupId>org.ow2.spec</groupId>
+    <artifactId>parent</artifactId>
+    <version>1.0.2</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.ow2.spec</groupId>
+  <artifactId>ee</artifactId>
+  <version>1.0.2</version>
+  <packaging>pom</packaging>
+  <name>Java EE Specifications</name>
+  <modules>
+    <!-- specification -->
+    <module>ejb-3.0</module>
+    <module>ejb-3.1</module>
+<!--    <module>jms-1.1</module>-->
+    <module>jpa-1.0</module>
+    <module>jta-1.1</module>
+    <module>jsr77-1.1</module>
+    <module>connector-1.5</module>
+    <module>deployment-1.2</module>
+    <module>jws-2.0</module>
+    <module>javaee-5</module>
+    <!--module>jaxws-2.1</module-->
+  </modules>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>5.1</version>
+      <classifier>jdk15</classifier>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.ow2.spec</groupId>
+      <artifactId>ow2-api-test-engine</artifactId>
+      <version>${pom.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>

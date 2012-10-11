@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  - EasyBeans
+  - Copyright (C) 2007-2009 Bull S.A.S.
+  - Contact: easybeans@ow2.org
+  -
+  - This library is free software; you can redistribute it and/or
+  - modify it under the terms of the GNU Lesser General Public
+  - License as published by the Free Software Foundation; either
+  - version 2.1 of the License, or (at your option) any later version.
+  -
+  - This library is distributed in the hope that it will be useful,
+  - but WITHOUT ANY WARRANTY; without even the implied warranty of
+  - MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  - Lesser General Public License for more details.
+  -
+  - You should have received a copy of the GNU Lesser General Public
+  - License along with this library; if not, write to the Free Software
+  - Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+  -
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  - $Id: pom.xml 4854 2009-03-30 07:43:52Z benoitf $
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <parent>
+    <groupId>org.ow2</groupId>
+    <artifactId>ow2</artifactId>
+    <version>1.1</version>
+  </parent>
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.ow2.spec</groupId>
+  <artifactId>parent</artifactId>
+  <packaging>pom</packaging>
+
+  <name>OW2 Spec</name>
+  <version>1.0.2</version>
+  <inceptionYear>2007</inceptionYear>
+
+  <repositories>
+    <repository>
+      <id>maven2-repository.dev.java.net</id>
+      <name>Java.net Repository for Maven</name>
+      <url>http://download.java.net/maven/2</url>
+    </repository>
+  </repositories>
+
+  <build>
+    <defaultGoal>install</defaultGoal>
+    <finalName>${pom.artifactId}</finalName>
+
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.0-beta-6</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.felix</groupId>
+          <artifactId>maven-bundle-plugin</artifactId>
+          <version>1.4.3</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+
+
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <configuration>
+          <tagBase>svn+ssh://${maven.username}@svn.forge.objectweb.org/svnroot/easybeans/tags</tagBase>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+          <showDeprecation>true</showDeprecation>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+
+  <modules>
+    <!-- Include EE module -->
+    <module>ee</module>
+
+    <!--  Test Engine -->
+    <module>api-test-engine</module>
+  </modules>
+
+  <licenses>
+    <license>
+      <name>GNU Lesser General Public License Version 2.1</name>
+      <url>http://www.gnu.org/licenses/lgpl.html</url>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:svn:svn://svn.forge.objectweb.org/svnroot/easybeans/tags/OW2_SPEC_1_0_2</connection>
+    <developerConnection>scm:svn:svn+ssh://benoitf@svn.forge.objectweb.org/svnroot/easybeans/tags/OW2_SPEC_1_0_2</developerConnection>
+    <url>http://fisheye.easybeans.org/browse/EasyBeans/tags/OW2_SPEC_1_0_2</url>
+  </scm>
+</project>
