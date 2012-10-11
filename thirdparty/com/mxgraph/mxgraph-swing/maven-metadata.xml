@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.mxgraph</groupId>
+  <artifactId>mxgraph-swing</artifactId>
+  <versioning>
+    <latest>mxgraph-core</latest>
+    <release>mxgraph-core</release>
+    <versions>
+      <version>mxgraph-core</version>
+    </versions>
+    <lastUpdated>20121011162237</lastUpdated>
+  </versioning>
+</metadata>
