@@ -102,6 +102,11 @@
       <artifactId>chronos-report-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Chronos Surefire</name>
+      <prefix>chronos-surefire</prefix>
+      <artifactId>chronos-surefire-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Clirr Plugin</name>
       <prefix>clirr</prefix>
       <artifactId>clirr-maven-plugin</artifactId>
@@ -202,6 +207,11 @@
       <artifactId>fitnesse-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>FitNesse Maven Plugin</name>
+      <prefix>fitnesse</prefix>
+      <artifactId>fitnesse-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>GMaven Legacy :: Groovy Maven Plugin</name>
       <prefix>groovy</prefix>
       <artifactId>groovy-maven-plugin</artifactId>
@@ -263,6 +273,11 @@
     </plugin>
     <plugin>
       <name>Maven JAXB 2.1 Plugin</name>
+      <prefix>jaxb2</prefix>
+      <artifactId>jaxb2-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>JAXB-2 Maven Plugin</name>
       <prefix>jaxb2</prefix>
       <artifactId>jaxb2-maven-plugin</artifactId>
     </plugin>
@@ -592,6 +607,11 @@
       <artifactId>truezip-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>TrueZIP Maven Plugin</name>
+      <prefix>truezip</prefix>
+      <artifactId>truezip-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Unix Plug-In</name>
       <prefix>unix</prefix>
       <artifactId>unix-maven-plugin</artifactId>
@@ -600,6 +620,11 @@
       <name>Versions Maven Plugin</name>
       <prefix>versions</prefix>
       <artifactId>versions-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Maven VFS plugin</name>
+      <prefix>vfs</prefix>
+      <artifactId>vfs-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Maven Wagon plugin</name>
@@ -618,6 +643,11 @@
     </plugin>
     <plugin>
       <name>Weblogic Maven Plugin</name>
+      <prefix>weblogic</prefix>
+      <artifactId>weblogic-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Mojo's Maven plugin for WebLogic</name>
       <prefix>weblogic</prefix>
       <artifactId>weblogic-maven-plugin</artifactId>
     </plugin>

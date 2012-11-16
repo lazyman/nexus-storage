@@ -277,6 +277,11 @@
       <artifactId>maven-scm-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>SCM Publish Maven Plugin</name>
+      <prefix>scm-publish</prefix>
+      <artifactId>maven-scm-publish-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>maven-shade-plugin</name>
       <prefix>shade</prefix>
       <artifactId>maven-shade-plugin</artifactId>
@@ -298,6 +303,11 @@
     </plugin>
     <plugin>
       <name>Maven Site Plugin 3</name>
+      <prefix>site</prefix>
+      <artifactId>maven-site-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Maven Site Plugin 2</name>
       <prefix>site</prefix>
       <artifactId>maven-site-plugin</artifactId>
     </plugin>
