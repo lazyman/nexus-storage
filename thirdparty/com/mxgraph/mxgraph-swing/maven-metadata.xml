@@ -3,11 +3,12 @@
   <groupId>com.mxgraph</groupId>
   <artifactId>mxgraph-swing</artifactId>
   <versioning>
-    <latest>mxgraph-core</latest>
-    <release>mxgraph-core</release>
+    <latest>1.0.0.6</latest>
+    <release>1.0.0.6</release>
     <versions>
       <version>mxgraph-core</version>
+      <version>1.0.0.6</version>
     </versions>
-    <lastUpdated>20121011162237</lastUpdated>
+    <lastUpdated>20121115143237</lastUpdated>
   </versioning>
 </metadata>
