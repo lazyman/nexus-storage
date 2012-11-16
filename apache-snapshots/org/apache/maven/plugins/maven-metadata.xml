@@ -266,5 +266,10 @@
       <prefix>asf-svnpubsub-plugin</prefix>
       <artifactId>asf-svnpubsub-plugin</artifactId>
     </plugin>
+    <plugin>
+      <name>SCM Publish Maven Plugin</name>
+      <prefix>scm-publish</prefix>
+      <artifactId>maven-scm-publish-plugin</artifactId>
+    </plugin>
   </plugins>
 </metadata>

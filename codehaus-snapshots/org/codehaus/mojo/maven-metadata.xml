@@ -117,6 +117,16 @@
       <artifactId>chronos-report-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Chronos Surefire</name>
+      <prefix>chronos-surefire</prefix>
+      <artifactId>chronos-surefire-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Chronos Timing</name>
+      <prefix>chronos-timer</prefix>
+      <artifactId>chronos-timer-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Ckjm Maven Mojo</name>
       <prefix>ckjm</prefix>
       <artifactId>ckjm-maven-plugin</artifactId>
@@ -257,6 +267,11 @@
       <artifactId>groovy-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Groovy Maven Plugin</name>
+      <prefix>groovy</prefix>
+      <artifactId>groovy-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven GWT Plugin</name>
       <prefix>gwt</prefix>
       <artifactId>gwt-maven-plugin</artifactId>
@@ -278,6 +293,11 @@
     </plugin>
     <plugin>
       <name>Maven CORBA IDL Compiler Plugin</name>
+      <prefix>idlj</prefix>
+      <artifactId>idlj-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>CORBA IDL Compiler Maven Plugin</name>
       <prefix>idlj</prefix>
       <artifactId>idlj-maven-plugin</artifactId>
     </plugin>
@@ -337,6 +357,11 @@
       <artifactId>jdepend-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>JDiff Maven Plugin</name>
+      <prefix>jdiff</prefix>
+      <artifactId>jdiff-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>JPox Maven Plugin</name>
       <prefix>jpox</prefix>
       <artifactId>jpox-maven-plugin</artifactId>
@@ -358,6 +383,11 @@
     </plugin>
     <plugin>
       <name>Maven Jspc plugin</name>
+      <prefix>jspc</prefix>
+      <artifactId>jspc-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>JSPC Maven Plugin</name>
       <prefix>jspc</prefix>
       <artifactId>jspc-maven-plugin</artifactId>
     </plugin>
@@ -650,6 +680,11 @@
       <name>Versions Maven Plugin</name>
       <prefix>versions</prefix>
       <artifactId>versions-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Maven VFS plugin</name>
+      <prefix>vfs</prefix>
+      <artifactId>vfs-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Virtualization Maven Plugin</name>
