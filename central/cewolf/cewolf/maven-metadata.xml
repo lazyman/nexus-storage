@@ -1,0 +1,12 @@
+<metadata>
+  <groupId>cewolf</groupId>
+  <artifactId>cewolf</artifactId>
+  <version>0.10.3</version>
+  <versioning>
+    <versions>
+      <version>0.10.3</version>
+      <version>0.12.0</version>
+      <version>1.0</version>
+    </versions>
+  </versioning>
+</metadata>

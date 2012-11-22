@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>commons-fileupload</groupId>
+  <artifactId>commons-fileupload</artifactId>
+  <versioning>
+    <latest>1.2.3-SNAPSHOT</latest>
+    <versions>
+      <version>1.2.3-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20120529122101</lastUpdated>
+  </versioning>
+</metadata>
