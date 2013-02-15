@@ -7,12 +7,12 @@
     <latest>1.2-SNAPSHOT</latest>
     <release></release>
     <versions>
-      <version>1.0-SNAPSHOT</version>
       <version>1.0-alpha-2-SNAPSHOT</version>
       <version>1.0-beta-1-SNAPSHOT</version>
+      <version>1.0-SNAPSHOT</version>
       <version>1.1-SNAPSHOT</version>
       <version>1.2-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20110209160758</lastUpdated>
+    <lastUpdated>20120214214653</lastUpdated>
   </versioning>
 </metadata>
