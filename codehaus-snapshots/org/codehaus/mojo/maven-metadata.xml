@@ -472,6 +472,11 @@
       <artifactId>native2ascii-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>NB Repository Plugin</name>
+      <prefix>nb-repository</prefix>
+      <artifactId>nb-repository-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>NBM Maven Plugin</name>
       <prefix>nbm</prefix>
       <artifactId>nbm-maven-plugin</artifactId>
@@ -600,6 +605,11 @@
       <name>Super Helpful Integration Testing ThingY (SHITTY) Maven Plugin</name>
       <prefix>shitty</prefix>
       <artifactId>shitty-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>SiteSkinner Maven Plugin</name>
+      <prefix>siteskinner</prefix>
+      <artifactId>siteskinner-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>State Machine Compiler (SMC) Maven Plugin</name>

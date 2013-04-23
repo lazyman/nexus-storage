@@ -407,6 +407,11 @@
       <artifactId>native2ascii-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>NB Repository Plugin</name>
+      <prefix>nb-repository</prefix>
+      <artifactId>nb-repository-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>NBM Maven Plugin</name>
       <prefix>nbm</prefix>
       <artifactId>nbm-maven-plugin</artifactId>
@@ -595,6 +600,11 @@
       <name>Maven Tag List Plugin</name>
       <prefix>taglist</prefix>
       <artifactId>taglist-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Templating Maven Plugin</name>
+      <prefix>templating</prefix>
+      <artifactId>templating-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Tomcat Maven Plugin</name>

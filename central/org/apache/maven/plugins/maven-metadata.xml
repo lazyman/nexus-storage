@@ -242,6 +242,11 @@
       <artifactId>maven-rar-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Maven RAR Plugin</name>
+      <prefix>rar</prefix>
+      <artifactId>maven-rar-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Reactor Plugin</name>
       <prefix>reactor</prefix>
       <artifactId>maven-reactor-plugin</artifactId>
