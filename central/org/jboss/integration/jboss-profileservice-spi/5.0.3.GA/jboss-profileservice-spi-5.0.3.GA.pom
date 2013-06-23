@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <groupId>org.jboss.integration</groupId>
+    <artifactId>jboss-integration-parent</artifactId>
+    <version>5.0.3.GA</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>jboss-profileservice-spi</artifactId>
+  <version>5.0.3.GA</version>
+  <packaging>jar</packaging>
+  <name>JBoss ProfileService 5.0.0 SPI</name>
+  <url>http://www.jboss.org</url>
+  <description>The Java ProfileService 5.0.0 SPI classes</description>
+  <dependencies>
+    <dependency>
+      <groupId>org.jboss</groupId>
+      <artifactId>jboss-common-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.man</groupId>
+      <artifactId>jboss-managed</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.man</groupId>
+      <artifactId>jboss-metatype</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.deployers</groupId>
+      <artifactId>jboss-deployers-vfs-spi</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss</groupId>
+      <artifactId>jboss-vfs</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.deployers</groupId>
+      <artifactId>jboss-deployers-core-spi</artifactId>
+    </dependency>
+  </dependencies>
+</project>
