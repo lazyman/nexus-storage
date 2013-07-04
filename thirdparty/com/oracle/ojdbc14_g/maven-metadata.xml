@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.oracle</groupId>
+  <artifactId>ojdbc14_g</artifactId>
+  <versioning>
+    <latest>10.2.0.1.0XE</latest>
+    <release>10.2.0.1.0XE</release>
+    <versions>
+      <version>10.2.0.1.0XE</version>
+    </versions>
+    <lastUpdated>20130621075636</lastUpdated>
+  </versioning>
+</metadata>
