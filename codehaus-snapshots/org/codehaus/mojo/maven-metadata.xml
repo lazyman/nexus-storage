@@ -147,6 +147,11 @@
       <artifactId>commons-attributes-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Maven Consumer Plugin</name>
+      <prefix>consumer</prefix>
+      <artifactId>consumer-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Dashboard Report Plugin</name>
       <prefix>dashboard-report</prefix>
       <artifactId>dashboard-maven-plugin</artifactId>
@@ -307,7 +312,7 @@
       <artifactId>jboss-packaging-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven JDepend Plugin</name>
+      <name>JDepend Maven Plugin</name>
       <prefix>jdepend</prefix>
       <artifactId>jdepend-maven-plugin</artifactId>
     </plugin>
