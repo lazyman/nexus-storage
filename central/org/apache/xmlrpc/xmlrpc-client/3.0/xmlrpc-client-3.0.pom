@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><project>
+  <parent>
+    <artifactId>xmlrpc</artifactId>
+    <groupId>org.apache.xmlrpc</groupId>
+    <version>3.0</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>xmlrpc-client</artifactId>
+  <name>Apache XML-RPC Client Library</name>
+  <version>3.0</version>
+  <build>
+    <sourceDirectory>src/main/java</sourceDirectory>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.xmlrpc</groupId>
+      <artifactId>xmlrpc-common</artifactId>
+      <version>3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-httpclient</groupId>
+      <artifactId>commons-httpclient</artifactId>
+    </dependency>
+  </dependencies>
+  <distributionManagement>
+    <status>deployed</status>
+  </distributionManagement>
+</project>

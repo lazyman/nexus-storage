@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><project>
+  <parent>
+    <artifactId>xmlrpc</artifactId>
+    <groupId>org.apache.xmlrpc</groupId>
+    <version>3.0</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>xmlrpc-common</artifactId>
+  <name>Apache XML-RPC Common Library</name>
+  <version>3.0</version>
+  <build>
+    <sourceDirectory>src/main/java</sourceDirectory>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.ws.commons</groupId>
+      <artifactId>ws-commons-util</artifactId>
+      <version>1.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>jaxme</groupId>
+      <artifactId>jaxmeapi</artifactId>
+      <version>0.5.1</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+  <distributionManagement>
+    <status>deployed</status>
+  </distributionManagement>
+</project>
