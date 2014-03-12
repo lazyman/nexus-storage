@@ -7,7 +7,7 @@
       <artifactId>asf-svnpubsub-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven ACR Plugin</name>
+      <name>Apache Maven ACR Plugin</name>
       <prefix>acr</prefix>
       <artifactId>maven-acr-plugin</artifactId>
     </plugin>
@@ -17,7 +17,12 @@
       <artifactId>maven-ant-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven AntRun Plugin</name>
+      <name>Apache Maven Ant Plugin</name>
+      <prefix>ant</prefix>
+      <artifactId>maven-ant-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Apache Maven AntRun Plugin</name>
       <prefix>antrun</prefix>
       <artifactId>maven-antrun-plugin</artifactId>
     </plugin>
@@ -32,7 +37,12 @@
       <artifactId>maven-assembly-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Changelog Plugin</name>
+      <name>Apache Maven Assembly Plugin</name>
+      <prefix>assembly</prefix>
+      <artifactId>maven-assembly-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Apache Maven Changelog Plugin</name>
       <prefix>changelog</prefix>
       <artifactId>maven-changelog-plugin</artifactId>
     </plugin>
@@ -42,12 +52,27 @@
       <artifactId>maven-changes-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Apache Maven Changes Plugin</name>
+      <prefix>changes</prefix>
+      <artifactId>maven-changes-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Checkstyle Plugin</name>
       <prefix>checkstyle</prefix>
       <artifactId>maven-checkstyle-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Apache Maven Checkstyle Plugin</name>
+      <prefix>checkstyle</prefix>
+      <artifactId>maven-checkstyle-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven IT Clean Plugin Stub</name>
+      <prefix>clean</prefix>
+      <artifactId>maven-clean-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Apache Maven Clean Plugin</name>
       <prefix>clean</prefix>
       <artifactId>maven-clean-plugin</artifactId>
     </plugin>
@@ -67,7 +92,17 @@
       <artifactId>maven-compiler-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Apache Maven Compiler Plugin</name>
+      <prefix>compiler</prefix>
+      <artifactId>maven-compiler-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Dependency Plugin</name>
+      <prefix>dependency</prefix>
+      <artifactId>maven-dependency-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Apache Maven Dependency Plugin</name>
       <prefix>dependency</prefix>
       <artifactId>maven-dependency-plugin</artifactId>
     </plugin>
@@ -77,17 +112,22 @@
       <artifactId>maven-deploy-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Deploy Plugin</name>
+      <name>Apache Maven Deploy Plugin</name>
       <prefix>deploy</prefix>
       <artifactId>maven-deploy-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven DOAP Plugin</name>
+      <name>maven-digest-plugin Apache Maven Mojo</name>
+      <prefix>digest</prefix>
+      <artifactId>maven-digest-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Apache Maven DOAP Plugin</name>
       <prefix>doap</prefix>
       <artifactId>maven-doap-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Documentation Checker Plugin</name>
+      <name>Apache Maven Documentation Checker Plugin</name>
       <prefix>docck</prefix>
       <artifactId>maven-docck-plugin</artifactId>
     </plugin>
@@ -102,7 +142,12 @@
       <artifactId>maven-ear-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Eclipse Plugin</name>
+      <name>Apache Maven EAR Plugin</name>
+      <prefix>ear</prefix>
+      <artifactId>maven-ear-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Apache Maven Eclipse Plugin</name>
       <prefix>eclipse</prefix>
       <artifactId>maven-eclipse-plugin</artifactId>
     </plugin>
@@ -112,7 +157,7 @@
       <artifactId>maven-ejb-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven EJB Plugin</name>
+      <name>Apache Maven EJB Plugin</name>
       <prefix>ejb</prefix>
       <artifactId>maven-ejb-plugin</artifactId>
     </plugin>
@@ -127,12 +172,12 @@
       <artifactId>maven-failsafe-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven GPG Plugin</name>
+      <name>Apache Maven GPG Plugin</name>
       <prefix>gpg</prefix>
       <artifactId>maven-gpg-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Help Plugin</name>
+      <name>Apache Maven Help Plugin</name>
       <prefix>help</prefix>
       <artifactId>maven-help-plugin</artifactId>
     </plugin>
@@ -142,17 +187,22 @@
       <artifactId>maven-idea-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Apache Maven IDEA Plugin (RETIRED)</name>
+      <prefix>idea</prefix>
+      <artifactId>maven-idea-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven IT Install Plugin Stub</name>
       <prefix>install</prefix>
       <artifactId>maven-install-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Install Plugin</name>
+      <name>Apache Maven Install Plugin</name>
       <prefix>install</prefix>
       <artifactId>maven-install-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Invoker Plugin</name>
+      <name>Apache Maven Invoker Plugin</name>
       <prefix>invoker</prefix>
       <artifactId>maven-invoker-plugin</artifactId>
     </plugin>
@@ -162,14 +212,19 @@
       <artifactId>maven-jar-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven JAR Plugin</name>
+      <name>Apache Maven JAR Plugin</name>
       <prefix>jar</prefix>
       <artifactId>maven-jar-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Jarsigner Plugin</name>
+      <name>Apache Maven Jarsigner Plugin</name>
       <prefix>jarsigner</prefix>
       <artifactId>maven-jarsigner-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Apache Maven Javadoc Plugin</name>
+      <prefix>javadoc</prefix>
+      <artifactId>maven-javadoc-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Maven IT Javadoc Plugin Stub</name>
@@ -187,14 +242,19 @@
       <artifactId>maven-jxr-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Linkcheck Plugin</name>
+      <name>Apache Maven Linkcheck Plugin</name>
       <prefix>linkcheck</prefix>
       <artifactId>maven-linkcheck-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven One Plugin</name>
+      <name>Apache Maven One Plugin (RETIRED)</name>
       <prefix>one</prefix>
       <artifactId>maven-one-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Apache Maven Patch Plugin</name>
+      <prefix>patch</prefix>
+      <artifactId>maven-patch-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Maven Patch Plugin</name>
@@ -207,7 +267,7 @@
       <artifactId>maven-patch-tracker-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven PDF Plugin</name>
+      <name>Apache Maven PDF Plugin</name>
       <prefix>pdf</prefix>
       <artifactId>maven-pdf-plugin</artifactId>
     </plugin>
@@ -227,7 +287,17 @@
       <artifactId>maven-pmd-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Apache Maven PMD Plugin</name>
+      <prefix>pmd</prefix>
+      <artifactId>maven-pmd-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Project Info Reports Plugin</name>
+      <prefix>project-info-reports</prefix>
+      <artifactId>maven-project-info-reports-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Apache Maven Project Info Reports Plugin</name>
       <prefix>project-info-reports</prefix>
       <artifactId>maven-project-info-reports-plugin</artifactId>
     </plugin>
@@ -237,12 +307,12 @@
       <artifactId>maven-rar-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven RAR Plugin</name>
+      <name>Apache Maven RAR Plugin</name>
       <prefix>rar</prefix>
       <artifactId>maven-rar-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Reactor Plugin</name>
+      <name>Apache Maven Reactor Plugin</name>
       <prefix>reactor</prefix>
       <artifactId>maven-reactor-plugin</artifactId>
     </plugin>
@@ -257,7 +327,17 @@
       <artifactId>maven-remote-resources-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Apache Maven Remote Resources Plugin</name>
+      <prefix>remote-resources</prefix>
+      <artifactId>maven-remote-resources-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Repository Plugin</name>
+      <prefix>repository</prefix>
+      <artifactId>maven-repository-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Apache Maven Repository Plugin</name>
       <prefix>repository</prefix>
       <artifactId>maven-repository-plugin</artifactId>
     </plugin>
@@ -267,7 +347,7 @@
       <artifactId>maven-resources-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Resources Plugin</name>
+      <name>Apache Maven Resources Plugin</name>
       <prefix>resources</prefix>
       <artifactId>maven-resources-plugin</artifactId>
     </plugin>
@@ -277,12 +357,17 @@
       <artifactId>maven-scm-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven SCM Publish Plugin</name>
+      <name>Apache Maven SCM Publish Plugin</name>
       <prefix>scm-publish</prefix>
       <artifactId>maven-scm-publish-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Maven Shade Plugin</name>
+      <prefix>shade</prefix>
+      <artifactId>maven-shade-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Apache Maven Shade Plugin</name>
       <prefix>shade</prefix>
       <artifactId>maven-shade-plugin</artifactId>
     </plugin>
@@ -297,12 +382,17 @@
       <artifactId>maven-site-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Site Plugin 3</name>
+      <name>Apache Maven Site Plugin 3</name>
       <prefix>site</prefix>
       <artifactId>maven-site-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Maven IT Source Plugin Stub</name>
+      <prefix>source</prefix>
+      <artifactId>maven-source-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Apache Maven Source Plugin</name>
       <prefix>source</prefix>
       <artifactId>maven-source-plugin</artifactId>
     </plugin>
@@ -313,6 +403,11 @@
     </plugin>
     <plugin>
       <name>Maven Stage Plugin</name>
+      <prefix>stage</prefix>
+      <artifactId>maven-stage-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Apache Maven Stage Plugin</name>
       <prefix>stage</prefix>
       <artifactId>maven-stage-plugin</artifactId>
     </plugin>
@@ -332,12 +427,17 @@
       <artifactId>maven-surefire-report-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Toolchains Plugin</name>
+      <name>Apache Maven Toolchains Plugin</name>
       <prefix>toolchains</prefix>
       <artifactId>maven-toolchains-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Maven Verifier Plugin</name>
+      <prefix>verifier</prefix>
+      <artifactId>maven-verifier-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Apache Maven Verifier Plugin</name>
       <prefix>verifier</prefix>
       <artifactId>maven-verifier-plugin</artifactId>
     </plugin>
@@ -348,6 +448,11 @@
     </plugin>
     <plugin>
       <name>Maven WAR Plugin</name>
+      <prefix>war</prefix>
+      <artifactId>maven-war-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Apache Maven WAR Plugin</name>
       <prefix>war</prefix>
       <artifactId>maven-war-plugin</artifactId>
     </plugin>

@@ -17,11 +17,6 @@
       <artifactId>antlr3-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Application Assembler Plugin</name>
-      <prefix>appassembler</prefix>
-      <artifactId>appassembler-maven-plugin</artifactId>
-    </plugin>
-    <plugin>
       <name>Appassembler :: Maven Plug-In</name>
       <prefix>appassembler</prefix>
       <artifactId>appassembler-maven-plugin</artifactId>
@@ -55,11 +50,6 @@
       <name>Batik Maven Plugin</name>
       <prefix>batik</prefix>
       <artifactId>batik-maven-plugin</artifactId>
-    </plugin>
-    <plugin>
-      <name>Maven Build Helper Plugin</name>
-      <prefix>build-helper</prefix>
-      <artifactId>build-helper-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Build Helper Maven Plugin</name>
@@ -132,24 +122,19 @@
       <artifactId>ckjm-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Clirr Plugin</name>
-      <prefix>clirr</prefix>
-      <artifactId>clirr-maven-plugin</artifactId>
-    </plugin>
-    <plugin>
       <name>Clirr Maven Plugin</name>
       <prefix>clirr</prefix>
       <artifactId>clirr-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Cobertura Maven Plugin</name>
+      <name>Mojo's Maven plugin for Cobertura</name>
       <prefix>cobertura</prefix>
       <artifactId>cobertura-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Mojo's Maven plugin for Cobertura</name>
-      <prefix>cobertura</prefix>
-      <artifactId>cobertura-maven-plugin</artifactId>
+      <name>Codehuas Maven Plugin</name>
+      <prefix>codehaus</prefix>
+      <artifactId>codehaus-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>CodeNarc Maven Plugin</name>
@@ -187,11 +172,6 @@
       <artifactId>deploy-all-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>DITA Maven Plugin</name>
-      <prefix>dita</prefix>
-      <artifactId>dita-maven-plugin</artifactId>
-    </plugin>
-    <plugin>
       <name>DITA Open Toolkit Maven Plugin</name>
       <prefix>dita</prefix>
       <artifactId>dita-maven-plugin</artifactId>
@@ -200,6 +180,11 @@
       <name>XMLMind Dita Compiler Maven Plugin</name>
       <prefix>ditac</prefix>
       <artifactId>ditac-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>DITA Open Toolkit Maven Plugin</name>
+      <prefix>ditaot</prefix>
+      <artifactId>ditaot-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Maven Docbook plugin</name>
@@ -222,11 +207,6 @@
       <artifactId>enchanter-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Exec Plugin</name>
-      <prefix>exec</prefix>
-      <artifactId>exec-maven-plugin</artifactId>
-    </plugin>
-    <plugin>
       <name>Exec Maven Plugin</name>
       <prefix>exec</prefix>
       <artifactId>exec-maven-plugin</artifactId>
@@ -235,11 +215,6 @@
       <name>Failsafe Maven Plugin</name>
       <prefix>failsafe</prefix>
       <artifactId>failsafe-maven-plugin</artifactId>
-    </plugin>
-    <plugin>
-      <name>Maven FindBugs PlugIn</name>
-      <prefix>findbugs</prefix>
-      <artifactId>findbugs-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>FindBugs Maven Plugin</name>
@@ -260,11 +235,6 @@
       <name>Maven GAE Plugin</name>
       <prefix>gae</prefix>
       <artifactId>google-app-engine-maven-plugin</artifactId>
-    </plugin>
-    <plugin>
-      <name>Legacy Groovy Maven Plugin</name>
-      <prefix>groovy</prefix>
-      <artifactId>groovy-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Groovy Maven Plugin</name>
@@ -290,11 +260,6 @@
       <name>Maven IDEA UI Designer Plugin</name>
       <prefix>ideauidesigner</prefix>
       <artifactId>ideauidesigner-maven-plugin</artifactId>
-    </plugin>
-    <plugin>
-      <name>Maven CORBA IDL Compiler Plugin</name>
-      <prefix>idlj</prefix>
-      <artifactId>idlj-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>CORBA IDL Compiler Maven Plugin</name>
@@ -327,19 +292,9 @@
       <artifactId>javancss-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven JAXB 2.0 Plugin</name>
-      <prefix>jaxb2</prefix>
-      <artifactId>jaxb2-maven-plugin</artifactId>
-    </plugin>
-    <plugin>
       <name>Maven JAXB 2.1 Plugin</name>
       <prefix>jaxb2</prefix>
       <artifactId>jaxb2-maven-plugin</artifactId>
-    </plugin>
-    <plugin>
-      <name>Maven JBoss plugin</name>
-      <prefix>jboss</prefix>
-      <artifactId>jboss-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>JBoss Maven Plugin</name>
@@ -382,19 +337,9 @@
       <artifactId>jslint-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Jspc plugin</name>
-      <prefix>jspc</prefix>
-      <artifactId>jspc-maven-plugin</artifactId>
-    </plugin>
-    <plugin>
       <name>JSPC Maven Plugin</name>
       <prefix>jspc</prefix>
       <artifactId>jspc-maven-plugin</artifactId>
-    </plugin>
-    <plugin>
-      <name>Maven Keytool Plugin</name>
-      <prefix>keytool</prefix>
-      <artifactId>keytool-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Keytool Maven Plugin</name>
@@ -447,6 +392,11 @@
       <artifactId>mock-repository-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Mojo Development Maven Plugin</name>
+      <prefix>mojodev</prefix>
+      <artifactId>mojodev-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Mock Repository Manager: Maven Plugin</name>
       <prefix>mrm</prefix>
       <artifactId>mrm-maven-plugin</artifactId>
@@ -455,11 +405,6 @@
       <name>Multimodule Build Optimizer Plugin</name>
       <prefix>multibuild-optimizer</prefix>
       <artifactId>multibuild-optimizer-maven-plugin</artifactId>
-    </plugin>
-    <plugin>
-      <name>Maven Native Plugin</name>
-      <prefix>native</prefix>
-      <artifactId>native-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Native Maven Plugin</name>
@@ -642,17 +587,12 @@
       <artifactId>springws-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>SQL Plugin for Maven</name>
-      <prefix>sql</prefix>
-      <artifactId>sql-maven-plugin</artifactId>
-    </plugin>
-    <plugin>
       <name>SQL Maven Plugin</name>
       <prefix>sql</prefix>
       <artifactId>sql-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>sqlj-maven-plugin</name>
+      <name>Mojo's SQLJ Maven Plugin</name>
       <prefix>sqlj</prefix>
       <artifactId>sqlj-maven-plugin</artifactId>
     </plugin>
@@ -670,6 +610,16 @@
       <name>Taglist Maven Plugin</name>
       <prefix>taglist</prefix>
       <artifactId>taglist-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Templating Maven Plugin</name>
+      <prefix>templating</prefix>
+      <artifactId>templating-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Tidy Maven Plugin</name>
+      <prefix>tidy</prefix>
+      <artifactId>tidy-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Tomcat Maven Plugin</name>
@@ -717,11 +667,6 @@
       <artifactId>webdoclet-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Weblogic Maven Plugin</name>
-      <prefix>weblogic</prefix>
-      <artifactId>weblogic-maven-plugin</artifactId>
-    </plugin>
-    <plugin>
       <name>Mojo's Maven plugin for WebLogic</name>
       <prefix>weblogic</prefix>
       <artifactId>weblogic-maven-plugin</artifactId>
@@ -730,11 +675,6 @@
       <name>Web Minifier Maven Plugin</name>
       <prefix>webminifier</prefix>
       <artifactId>webminifier-maven-plugin</artifactId>
-    </plugin>
-    <plugin>
-      <name>Maven Webstart Plugin</name>
-      <prefix>webstart</prefix>
-      <artifactId>webstart-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>MWEBSTART :: Webstart Maven Plugin</name>

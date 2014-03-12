@@ -52,6 +52,11 @@
       <artifactId>maven-checkstyle-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Apache Maven Checkstyle Plugin</name>
+      <prefix>checkstyle</prefix>
+      <artifactId>maven-checkstyle-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Clean Plugin</name>
       <prefix>clean</prefix>
       <artifactId>maven-clean-plugin</artifactId>
@@ -87,6 +92,11 @@
       <artifactId>maven-deploy-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Apache Maven Deploy Plugin</name>
+      <prefix>deploy</prefix>
+      <artifactId>maven-deploy-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven DOAP Plugin</name>
       <prefix>doap</prefix>
       <artifactId>maven-doap-plugin</artifactId>
@@ -107,6 +117,11 @@
       <artifactId>maven-ear-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Apache Maven EAR Plugin</name>
+      <prefix>ear</prefix>
+      <artifactId>maven-ear-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Eclipse Plugin</name>
       <prefix>eclipse</prefix>
       <artifactId>maven-eclipse-plugin</artifactId>
@@ -122,12 +137,17 @@
       <artifactId>maven-enforcer-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Apache Maven Enforcer Plugin</name>
+      <prefix>enforcer</prefix>
+      <artifactId>maven-enforcer-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Failsafe Plugin</name>
       <prefix>failsafe</prefix>
       <artifactId>maven-failsafe-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>maven-gpg-plugin Maven Mojo</name>
+      <name>Apache Maven GPG Plugin</name>
       <prefix>gpg</prefix>
       <artifactId>maven-gpg-plugin</artifactId>
     </plugin>
@@ -147,7 +167,17 @@
       <artifactId>maven-idea-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Apache Maven IDEA Plugin (RETIRED)</name>
+      <prefix>idea</prefix>
+      <artifactId>maven-idea-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Install Plugin</name>
+      <prefix>install</prefix>
+      <artifactId>maven-install-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Apache Maven Install Plugin</name>
       <prefix>install</prefix>
       <artifactId>maven-install-plugin</artifactId>
     </plugin>
@@ -172,7 +202,17 @@
       <artifactId>maven-jarsigner-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Apache Maven Jarsigner Plugin</name>
+      <prefix>jarsigner</prefix>
+      <artifactId>maven-jarsigner-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Javadoc Plugin</name>
+      <prefix>javadoc</prefix>
+      <artifactId>maven-javadoc-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Apache Maven Javadoc Plugin</name>
       <prefix>javadoc</prefix>
       <artifactId>maven-javadoc-plugin</artifactId>
     </plugin>
@@ -194,6 +234,11 @@
     <plugin>
       <name>Maven One Plugin</name>
       <prefix>maven-one-plugin</prefix>
+      <artifactId>maven-one-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Apache Maven One Plugin (RETIRED)</name>
+      <prefix>one</prefix>
       <artifactId>maven-one-plugin</artifactId>
     </plugin>
     <plugin>
@@ -252,7 +297,7 @@
       <artifactId>maven-reactor-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Release plugin</name>
+      <name>Maven Release Plugin</name>
       <prefix>release</prefix>
       <artifactId>maven-release-plugin</artifactId>
     </plugin>
@@ -263,6 +308,11 @@
     </plugin>
     <plugin>
       <name>Maven Remote Resources Plugin</name>
+      <prefix>remote-resources</prefix>
+      <artifactId>maven-remote-resources-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Apache Maven Remote Resources Plugin</name>
       <prefix>remote-resources</prefix>
       <artifactId>maven-remote-resources-plugin</artifactId>
     </plugin>
@@ -282,7 +332,7 @@
       <artifactId>maven-scm-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>SCM Publish Maven Plugin</name>
+      <name>Apache Maven SCM Publish Plugin</name>
       <prefix>scm-publish</prefix>
       <artifactId>maven-scm-publish-plugin</artifactId>
     </plugin>
@@ -293,6 +343,11 @@
     </plugin>
     <plugin>
       <name>Maven Shade Plugin</name>
+      <prefix>shade</prefix>
+      <artifactId>maven-shade-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Apache Maven Shade Plugin</name>
       <prefix>shade</prefix>
       <artifactId>maven-shade-plugin</artifactId>
     </plugin>
@@ -358,6 +413,11 @@
     </plugin>
     <plugin>
       <name>Maven War Plugin</name>
+      <prefix>war</prefix>
+      <artifactId>maven-war-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Apache Maven WAR Plugin</name>
       <prefix>war</prefix>
       <artifactId>maven-war-plugin</artifactId>
     </plugin>
