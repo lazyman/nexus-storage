@@ -3,11 +3,11 @@
   <groupId>org.apache.maven.plugins</groupId>
   <artifactId>maven-scm-plugin</artifactId>
   <versioning>
-    <latest>1.1.1-SNAPSHOT</latest>
+    <latest>1.10-SNAPSHOT</latest>
     <versions>
-      <version>1.5-SNAPSHOT</version>
       <version>1.1.1-SNAPSHOT</version>
+      <version>1.10-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20110205224453</lastUpdated>
+    <lastUpdated>20140131004047</lastUpdated>
   </versioning>
 </metadata>
