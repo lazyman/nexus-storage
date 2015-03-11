@@ -202,6 +202,11 @@
       <artifactId>ec2-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Maven Email plugin</name>
+      <prefix>email</prefix>
+      <artifactId>email-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Emma Maven Plugin</name>
       <prefix>emma</prefix>
       <artifactId>emma-maven-plugin</artifactId>

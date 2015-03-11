@@ -44,22 +44,10 @@
       <url>@rootUrl@/content/repositories/java.net-m1-m2</url>
     </memberRepository>
     <memberRepository>
-      <id>google</id>
-      <name>Google Code</name>
+      <id>org.jboss.repository.releases</id>
+      <name>JBoss Maven Release Repository</name>
       <policy>release</policy>
-      <url>@rootUrl@/content/repositories/google</url>
-    </memberRepository>
-    <memberRepository>
-      <id>apache-snapshots</id>
-      <name>Apache Snapshots</name>
-      <policy>snapshot</policy>
-      <url>@rootUrl@/content/repositories/apache-snapshots</url>
-    </memberRepository>
-    <memberRepository>
-      <id>codehaus-snapshots</id>
-      <name>Codehaus Snapshots</name>
-      <policy>snapshot</policy>
-      <url>@rootUrl@/content/repositories/codehaus-snapshots</url>
+      <url>@rootUrl@/content/repositories/org.jboss.repository.releases</url>
     </memberRepository>
   </memberRepositories>
 </repository-metadata>

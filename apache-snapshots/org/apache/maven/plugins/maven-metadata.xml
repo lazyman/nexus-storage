@@ -47,7 +47,7 @@
       <artifactId>maven-checkstyle-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Clean Plugin</name>
+      <name>Apache Maven Clean Plugin</name>
       <prefix>clean</prefix>
       <artifactId>maven-clean-plugin</artifactId>
     </plugin>
@@ -270,6 +270,11 @@
       <name>Apache Maven WAR Plugin</name>
       <prefix>war</prefix>
       <artifactId>maven-war-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Apache Maven JDeps Plugin</name>
+      <prefix>jdeps</prefix>
+      <artifactId>maven-jdeps-plugin</artifactId>
     </plugin>
   </plugins>
 </metadata>
