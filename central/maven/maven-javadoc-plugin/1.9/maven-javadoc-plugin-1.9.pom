@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?><project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>maven</groupId>
+  <artifactId>maven-javadoc-plugin</artifactId>
+  <name>Maven Javadoc Plugin</name>
+  <version>1.9</version>
+  <url>http://maven.apache.org/maven-1.x/plugins/javadoc/</url>
+  <issueManagement>
+    <url>http://jira.codehaus.org/browse/MPJAVADOC</url>
+  </issueManagement>
+  <ciManagement>
+    <notifiers>
+      <notifier>
+        <configuration>
+          <address>notifications@maven.apache.org</address>
+        </configuration>
+      </notifier>
+    </notifiers>
+  </ciManagement>
+  <inceptionYear>2001</inceptionYear>
+  <mailingLists>
+    <mailingList>
+      <name>Maven User List</name>
+      <subscribe>users-subscribe@maven.apache.org</subscribe>
+      <unsubscribe>users-unsubscribe@maven.apache.org</unsubscribe>
+      <archive>http://mail-archives.apache.org/mod_mbox/maven-users/</archive>
+    </mailingList>
+    <mailingList>
+      <name>Maven Developer List</name>
+      <subscribe>dev-subscribe@maven.apache.org</subscribe>
+      <unsubscribe>dev-unsubscribe@maven.apache.org</unsubscribe>
+      <archive>http://mail-archives.apache.org/mod_mbox/maven-dev/</archive>
+    </mailingList>
+    <mailingList>
+      <name>Maven Commits List</name>
+      <subscribe>commits-subscribe@maven.apache.org</subscribe>
+      <unsubscribe>commits-unsubscribe@maven.apache.org</unsubscribe>
+      <archive>http://mail-archives.apache.org/mod_mbox/maven-dev/</archive>
+    </mailingList>
+    <mailingList>
+      <name>Maven Issues List</name>
+      <subscribe>issues-subscribe@maven.apache.org</subscribe>
+      <unsubscribe>issues-unsubscribe@maven.apache.org</unsubscribe>
+      <archive>http://mail-archives.apache.org/mod_mbox/maven-issues/</archive>
+    </mailingList>
+    <mailingList>
+      <name>Maven Announce List</name>
+      <subscribe>announce-subscribe@maven.apache.org</subscribe>
+      <unsubscribe>announce-unsubscribe@maven.apache.org</unsubscribe>
+      <archive>http://mail-archives.apache.org/mod_mbox/maven-announce/</archive>
+    </mailingList>
+    <mailingList>
+      <name>Apache Announce List</name>
+      <subscribe>announce-subscribe@apache.org</subscribe>
+      <unsubscribe>announce-unsubscribe@apache.org</unsubscribe>
+      <archive>http://mail-archives.apache.org/mod_mbox/www-announce/</archive>
+    </mailingList>
+  </mailingLists>
+  <developers>
+    <developer>
+      <id>evenisse</id>
+      <name>Emmanuel Venisse</name>
+      <email>emmanuel@venisse.net</email>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>smor</id>
+      <name>St?phane Mor</name>
+      <email>stephanemor@yahoo.fr</email>
+      <organization>Hasgard Syst?mes et R?seaux</organization>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>jvanzyl</id>
+      <name>Jason van Zyl</name>
+      <email>jason@zenplex.com</email>
+      <organization>Zenplex</organization>
+      <roles>
+        <role>Architect</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>michal</id>
+      <name>Michal Maczka</name>
+      <email>michal.maczka@dimatics.com</email>
+      <organization>Dimatics</organization>
+      <roles>
+        <role>Jelly Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>vmassol</id>
+      <name>Vincent Massol</name>
+      <email>vmassol@pivolis.com</email>
+      <organization>Pivolis</organization>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>aheritier</id>
+      <name>Arnaud Heritier</name>
+      <email>aheritier@apache.org</email>
+      <organization>Octo Technology</organization>
+      <roles>
+        <role>Developer</role>
+        <role>Release Manager</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>felipeal</id>
+      <name>Felipe Leme</name>
+      <email>maven@felipeal.net</email>
+      <organization>Falcon Informatica</organization>
+      <roles>
+        <role>Java Developer</role>
+        <role>Jelly Developer</role>
+      </roles>
+      <timezone>-3</timezone>
+    </developer>
+    <developer>
+      <id>ltheussl</id>
+      <name>Lukas Theussl</name>
+      <email>ltheussl@apache.org</email>
+      <roles>
+        <role>Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>jjensen</id>
+      <name>Jeff Jensen</name>
+      <email>jjensen@apache.org</email>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>-6</timezone>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:svn:http://svn.apache.org/repos/asf/maven/maven-1/plugins/trunk/javadoc/</connection>
+    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/maven/maven-1/plugins/trunk/javadoc/</developerConnection>
+    <url>http://svn.apache.org/viewcvs.cgi/maven/maven-1/plugins/trunk/javadoc/</url>
+  </scm>
+  <organization>
+    <name>Apache Software Foundation</name>
+    <url>http://www.apache.org/</url>
+  </organization>
+  <build>
+    <sourceDirectory>src/main</sourceDirectory>
+    <testSourceDirectory>src/test</testSourceDirectory>
+    <resources>
+      <resource>
+        <targetPath>META-INF</targetPath>
+        <directory>../plugins-parent/</directory>
+        <includes>
+          <include>NOTICE.txt</include>
+        </includes>
+      </resource>
+      <resource>
+        <targetPath>plugin-resources</targetPath>
+        <directory>src/plugin-resources</directory>
+      </resource>
+      <resource>
+        <directory>.</directory>
+        <includes>
+          <include>plugin.jelly</include>
+          <include>plugin.properties</include>
+          <include>project.properties</include>
+          <include>build.properties</include>
+          <include>project.xml</include>
+        </includes>
+      </resource>
+    </resources>
+    <testResources>
+      <testResource>
+        <directory>src/test</directory>
+        <includes>
+          <include>**/*.txt</include>
+        </includes>
+      </testResource>
+    </testResources>
+    <plugins>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <includes>
+            <include>**/*Test.java</include>
+          </includes>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+      <version>2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-collections</groupId>
+      <artifactId>commons-collections</artifactId>
+      <version>3.0</version>
+    </dependency>
+  </dependencies>
+  <distributionManagement>
+    <repository>
+      <id>default</id>
+      <name>Default Repository</name>
+      <url>people.apache.org//www/people.apache.org/repo/m1-ibiblio-rsync-repository/</url>
+    </repository>
+    <site>
+      <id>default</id>
+      <name>Default Site</name>
+      <url>scp://people.apache.org//www/maven.apache.org/maven-1.x/plugins/javadoc/</url>
+    </site>
+    <status>converted</status>
+  </distributionManagement>
+</project>
