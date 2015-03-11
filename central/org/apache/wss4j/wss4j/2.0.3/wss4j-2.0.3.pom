@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements. See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership. The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License. You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied. See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.apache.wss4j</groupId>
+    <artifactId>wss4j</artifactId>
+    <version>2.0.3</version>
+    <packaging>pom</packaging>
+    <name>Apache WSS4J</name>
+    <description>
+        The Apache WSS4J project provides a Java implementation of the primary security standards 
+        for Web Services, namely the OASIS Web Services Security (WS-Security) specifications 
+        from the OASIS Web Services Security TC.
+    </description>
+    <url>http://ws.apache.org/wss4j/</url>
+    <issueManagement>
+        <system>JIRA</system>
+        <url>http://issues.apache.org/jira/browse/WSS</url>
+    </issueManagement>
+    <mailingLists>
+        <mailingList>
+            <name>Apache Web Services Developer List</name>
+            <subscribe>dev-subscribe@ws.apache.org</subscribe>
+            <unsubscribe>
+                dev-unsubscribe@ws.apache.org
+            </unsubscribe>
+            <post>dev@ws.apache.org</post>
+            <archive>
+                http://mail-archives.apache.org/mod_mbox/ws-dev/
+            </archive>
+        </mailingList>
+        <mailingList>
+            <name>Apache Web Services Users List</name>
+            <subscribe>users-subscribe@ws.apache.org</subscribe>
+            <unsubscribe>
+                users-unsubscribe@ws.apache.org
+            </unsubscribe>
+            <post>users@ws.apache.org</post>
+            <archive>
+                http://mail-archives.apache.org/mod_mbox/ws-users/
+            </archive>
+        </mailingList>
+        <mailingList>
+            <name>Apache Web Services Commits List</name>
+            <subscribe>commits-subscribe@ws.apache.org</subscribe>
+            <unsubscribe>
+                commits-unsubscribe@ws.apache.org
+            </unsubscribe>
+            <archive>
+                http://mail-archives.apache.org/mod_mbox/ws-commits/
+            </archive>
+        </mailingList>
+    </mailingLists>
+    <inceptionYear>2004</inceptionYear>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <scm>
+        <connection>
+            scm:svn:http://svn.apache.org/repos/asf/webservices/wss4j/tags/wss4j-2.0.3
+        </connection>
+        <developerConnection>
+            scm:svn:https://svn.apache.org/repos/asf/webservices/wss4j/tags/wss4j-2.0.3
+        </developerConnection>
+        <url>http://svn.apache.org/repos/asf/webservices/wss4j/tags/wss4j-2.0.3</url>
+    </scm>
+    <organization>
+        <name>The Apache Software Foundation</name>
+        <url>http://www.apache.org/</url>
+    </organization>
+    <developers>
+        <developer>
+            <name>The Apache WSS4J Team</name>
+            <email>wss4j-dev@ws.apache.org</email>
+            <url>http://ws.apache.org/wss4j</url>
+            <organization>Apache Software Foundation</organization>
+            <organizationUrl>http://apache.org/</organizationUrl>
+        </developer>
+    </developers>
+
+    <parent>
+        <groupId>org.apache</groupId>
+        <artifactId>apache</artifactId>
+        <version>14</version>
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <targetJdk>1.6</targetJdk>
+    </properties>
+
+    <modules>
+        <module>parent</module>
+        <module>bindings</module>
+        <module>policy</module>
+        <module>ws-security-common</module>
+        <module>ws-security-dom</module>
+        <module>ws-security-stax</module>
+        <module>integration</module>
+        <module>ws-security-policy-stax</module>
+        <!-- <module>performance</module>-->
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <sourceEncoding>UTF-8</sourceEncoding>
+                    <failOnViolation>true</failOnViolation>
+                    <linkXRef>false</linkXRef>
+                    <verbose>true</verbose>
+                    <minimumTokens>100</minimumTokens>
+                    <targetJdk>${targetJdk}</targetJdk>
+                    <excludes>
+                        <exclude>**/CryptoBase.java, **/DOM2Writer.java</exclude>
+                    </excludes>
+                    <excludeRoots>
+                        <excludeRoot>${basedir}/src/main/generated</excludeRoot>
+                    </excludeRoots>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>validate</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.3</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <attach>true</attach>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5</version>
+                <configuration>
+                    <useReleaseProfile>false</useReleaseProfile>
+                    <preparationGoals>clean install</preparationGoals>
+                    <goals>deploy</goals>
+                    <arguments>-Papache-release</arguments>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                </configuration>
+            </plugin>
+        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.felix</groupId>
+                    <artifactId>maven-bundle-plugin</artifactId>
+                    <version>2.4.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-antrun-plugin</artifactId>
+                    <version>1.7</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>ant</groupId>
+                            <artifactId>ant-optional</artifactId>
+                            <version>1.5.3-1</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.2</version>
+                    <configuration>
+                        <source>${targetJdk}</source>
+                        <target>${targetJdk}</target>
+                        <showWarnings>true</showWarnings>
+                        <compilerArgument>-Xlint:overrides</compilerArgument>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.rat</groupId>
+                    <artifactId>apache-rat-plugin</artifactId>
+                    <version>0.11</version>
+                    <executions>
+                        <execution>
+                            <phase>verify</phase>
+                            <goals>
+                                <goal>check</goal>
+                           </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <excludes>
+                        <exclude>**/*.sh</exclude>
+                        <exclude>*.txt</exclude>
+                        <exclude>.gitignore</exclude>
+                        <exclude>.git/**</exclude>
+                        <exclude>.svn/**</exclude>
+                        <exclude>.pmd/**</exclude>
+                        <exclude>.externalToolBuilders/**</exclude>
+                        <exclude>.checkstyle/**</exclude>
+                        <exclude>.classpath</exclude>
+                        <exclude>.project</exclude>
+                        <exclude>.settings/**</exclude>
+                        <exclude>.idea/**</exclude>
+                        <exclude>**/src/main/resources/**</exclude>
+                        <exclude>**/src/site/**</exclude>
+                        <exclude>**/src/test/resources/**</exclude>
+                        <exclude>**/*.patch</exclude>
+                        <exclude>NOTICE</exclude>
+                        </excludes>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>cobertura-maven-plugin</artifactId>
+                    <version>2.6</version>
+                    <inherited>true</inherited>
+                    <configuration>
+                        <check>
+                            <branchRate>100</branchRate>
+                            <lineRate>100</lineRate>
+                            <haltOnFailure>false</haltOnFailure>
+                            <totalBranchRate>100</totalBranchRate>
+                            <totalLineRate>100</totalLineRate>
+                            <packageLineRate>100</packageLineRate>
+                            <packageBranchRate>100</packageBranchRate>
+                        </check>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.17</version>
+                    <inherited>true</inherited>
+                    <configuration>
+                        <reportFormat>brief</reportFormat>
+                        <useFile>false</useFile>
+                        <childDelegation>false</childDelegation>
+                        <includes>
+                            <include>**/*Test.java</include>
+                        </includes>
+                        <systemPropertyVariables>
+                            <java.io.tmpdir>${basedir}/target</java.io.tmpdir>
+                        </systemPropertyVariables>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>2.10.1</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>jar</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <attach>true</attach>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.jvnet.jaxb2.maven2</groupId>
+                    <artifactId>maven-jaxb2-plugin</artifactId>
+                    <version>0.9.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>3.4</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+        <defaultGoal>install</defaultGoal>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>fastinstall</id>
+            <properties>
+                <maven.test.skip>true</maven.test.skip>
+                <pmd.skip>true</pmd.skip>
+            </properties>
+        </profile>
+        <profile>
+            <id>nochecks</id>
+            <properties>
+                <pmd.skip>true</pmd.skip>
+            </properties>
+        </profile>
+    </profiles>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>2.7</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>issue-tracking</report>
+                            <report>license</report>
+                            <report>mailing-list</report>
+                            <report>scm</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jxr-plugin</artifactId>
+                <version>2.4</version>
+            </plugin>
+        </plugins>
+    </reporting>
+
+    <distributionManagement>
+        <repository>
+            <id>apache.releases.https</id>
+            <name>Apache Release Distribution Repository</name>
+            <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </repository>
+        <snapshotRepository>
+            <id>apache.snapshots.https</id>
+            <name>Apache Development Snapshot Repository</name>
+            <url>https://repository.apache.org/content/repositories/snapshots</url>
+            <!--uniqueVersion>false</uniqueVersion-->
+        </snapshotRepository>
+    </distributionManagement>
+    <repositories>
+          <repository>
+              <id>apache.snapshots</id>
+              <url>http://repository.apache.org/snapshots/</url>
+              <name>Apache Snapshot Repo</name>
+             <snapshots>
+                 <enabled>true</enabled>
+             </snapshots>
+             <releases>
+                 <enabled>false</enabled>
+             </releases>
+         </repository> 
+     </repositories>
+    <pluginRepositories>
+         <pluginRepository>
+             <id>apache.snapshots</id>
+             <url>http://repository.apache.org/snapshots/</url>
+             <snapshots>
+                 <enabled>true</enabled>
+             </snapshots>
+             <releases>
+                 <enabled>false</enabled>
+             </releases>
+         </pluginRepository>
+     </pluginRepositories>
+
+</project>
