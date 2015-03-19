@@ -97,7 +97,7 @@
       <artifactId>maven-deploy-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven DOAP Plugin</name>
+      <name>Apache Maven DOAP Plugin</name>
       <prefix>doap</prefix>
       <artifactId>maven-doap-plugin</artifactId>
     </plugin>
