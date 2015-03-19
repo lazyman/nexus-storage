@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.apache.maven.its</groupId>
+  <artifactId>maven-it-helper</artifactId>
+  <version>2.1-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20110710.205808</timestamp>
+      <buildNumber>8</buildNumber>
+    </snapshot>
+    <lastUpdated>20110710205808</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>2.1-20110710.205808-8</value>
+        <updated>20110710205808</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>2.1-20110710.205808-8</value>
+        <updated>20110710205808</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

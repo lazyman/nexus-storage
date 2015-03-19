@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.apache.maven.shared</groupId>
+  <artifactId>maven-verifier</artifactId>
+  <version>1.6-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20150318.223342</timestamp>
+      <buildNumber>152</buildNumber>
+    </snapshot>
+    <lastUpdated>20150318223342</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>1.6-20150318.223342-152</value>
+        <updated>20150318223342</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.6-20150318.223342-152</value>
+        <updated>20150318223342</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
