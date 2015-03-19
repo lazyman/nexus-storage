@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>it.could</groupId>
+  <artifactId>webdav</artifactId>
+  <version>0.4</version>
+
+  <name>Simple WebDAV</name>
+
+  <description>
+    A Simple Approach to WebDAV (Servlet Implementation)
+  </description>
+
+  <url>http://could.it/main/a-simple-approach-to-webdav.html</url>
+
+  <developers>
+    <developer>
+      <id>pier</id>
+      <name>Pier Fumagalli</name>
+      <email>ianosh@gmail.com</email>
+      <url>http://pier.fumagalli.org/</url>
+    </developer>
+  </developers>
+
+  <licenses>
+    <license>
+      <name>Apache License v2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>http://could.it/repo/webdav/head/</connection>
+  </scm>
+
+  <dependencies>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.3</version>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+
+</project>

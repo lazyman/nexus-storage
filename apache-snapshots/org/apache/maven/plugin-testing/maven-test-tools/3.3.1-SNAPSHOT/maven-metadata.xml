@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.apache.maven.plugin-testing</groupId>
+  <artifactId>maven-test-tools</artifactId>
+  <version>3.3.1-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20141218.021621</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20141218021621</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>3.3.1-20141218.021621-1</value>
+        <updated>20141218021621</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>3.3.1-20141218.021621-1</value>
+        <updated>20141218021621</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

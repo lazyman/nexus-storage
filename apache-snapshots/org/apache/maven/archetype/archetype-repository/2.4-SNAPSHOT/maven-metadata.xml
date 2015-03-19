@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.apache.maven.archetype</groupId>
+  <artifactId>archetype-repository</artifactId>
+  <version>2.4-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20150309.121709</timestamp>
+      <buildNumber>3</buildNumber>
+    </snapshot>
+    <lastUpdated>20150309121709</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>war</extension>
+        <value>2.4-20150309.121709-3</value>
+        <updated>20150309121709</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>2.4-20150309.121709-3</value>
+        <updated>20150309121709</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
