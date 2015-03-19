@@ -44,10 +44,22 @@
       <url>@rootUrl@/content/repositories/java.net-m1-m2</url>
     </memberRepository>
     <memberRepository>
-      <id>org.jboss.repository.releases</id>
-      <name>JBoss Maven Release Repository</name>
+      <id>lspj-other-repo</id>
+      <name>lspj dependencies repo</name>
       <policy>release</policy>
-      <url>@rootUrl@/content/repositories/org.jboss.repository.releases</url>
+      <url>@rootUrl@/content/repositories/lspj-other-repo</url>
+    </memberRepository>
+    <memberRepository>
+      <id>apache-snapshots</id>
+      <name>Apache Snapshots</name>
+      <policy>snapshot</policy>
+      <url>@rootUrl@/content/repositories/apache-snapshots</url>
+    </memberRepository>
+    <memberRepository>
+      <id>codehaus-snapshots</id>
+      <name>Codehaus Snapshots</name>
+      <policy>snapshot</policy>
+      <url>@rootUrl@/content/repositories/codehaus-snapshots</url>
     </memberRepository>
   </memberRepositories>
 </repository-metadata>
