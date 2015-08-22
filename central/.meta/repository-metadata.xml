@@ -1,10 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <repository-metadata>
   <version>1.0.0</version>
-  <url>http://repo1.maven.org/maven2/</url>
-  <id>central</id>
-  <name>Maven Central</name>
+  <url>http://maven.oschina.net/content/groups/public</url>
+  <id>public</id>
+  <name>Public Repositories</name>
   <layout>maven2</layout>
-  <policy>release</policy>
-  <localUrl>@rootUrl@/content/repositories/central</localUrl>
+  <policy>mixed</policy>
+  <memberRepositories>
+    <memberRepository>
+      <id>ibiblio</id>
+      <name>ibiblio</name>
+      <policy>release</policy>
+      <url>http://maven.oschina.net/content/repositories/ibiblio</url>
+    </memberRepository>
+    <memberRepository>
+      <id>central</id>
+      <name>Central</name>
+      <policy>release</policy>
+      <url>http://maven.oschina.net/content/repositories/central</url>
+    </memberRepository>
+    <memberRepository>
+      <id>restlet</id>
+      <name>Restlet</name>
+      <policy>release</policy>
+      <url>http://maven.oschina.net/content/repositories/restlet</url>
+    </memberRepository>
+    <memberRepository>
+      <id>sonatype-public-grid</id>
+      <name>sonatype public grid</name>
+      <policy>release</policy>
+      <url>http://maven.oschina.net/content/repositories/sonatype-public-grid</url>
+    </memberRepository>
+    <memberRepository>
+      <id>jeasyuicn</id>
+      <name>jeasyuicn</name>
+      <policy>release</policy>
+      <url>http://maven.oschina.net/content/repositories/jeasyuicn</url>
+    </memberRepository>
+    <memberRepository>
+      <id>koala-release</id>
+      <name>Koala Release</name>
+      <policy>release</policy>
+      <url>http://maven.oschina.net/content/repositories/koala-release</url>
+    </memberRepository>
+    <memberRepository>
+      <id>mvnrepository</id>
+      <name>mvnrepository</name>
+      <policy>release</policy>
+      <url>http://maven.oschina.net/content/repositories/mvnrepository</url>
+    </memberRepository>
+    <memberRepository>
+      <id>zkoss</id>
+      <name>zkoss</name>
+      <policy>release</policy>
+      <url>http://maven.oschina.net/content/repositories/zkoss</url>
+    </memberRepository>
+    <memberRepository>
+      <id>repo_springsource</id>
+      <name>repo.springsource</name>
+      <policy>release</policy>
+      <url>http://maven.oschina.net/content/repositories/repo_springsource</url>
+    </memberRepository>
+    <memberRepository>
+      <id>duapp</id>
+      <name>Baidu duapp</name>
+      <policy>release</policy>
+      <url>http://maven.oschina.net/content/repositories/duapp</url>
+    </memberRepository>
+    <memberRepository>
+      <id>alibaba</id>
+      <name>Alibaba</name>
+      <policy>release</policy>
+      <url>http://maven.oschina.net/content/repositories/alibaba</url>
+    </memberRepository>
+  </memberRepositories>
 </repository-metadata>
