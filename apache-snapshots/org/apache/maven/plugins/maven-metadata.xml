@@ -42,7 +42,7 @@
       <artifactId>maven-changes-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Apache Maven Checkstyle Plugin</name>
+      <name>Maven Checkstyle Plugin</name>
       <prefix>checkstyle</prefix>
       <artifactId>maven-checkstyle-plugin</artifactId>
     </plugin>
@@ -145,6 +145,11 @@
       <name>Maven Javadoc Plugin</name>
       <prefix>javadoc</prefix>
       <artifactId>maven-javadoc-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Apache Maven JDeps Plugin</name>
+      <prefix>jdeps</prefix>
+      <artifactId>maven-jdeps-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Maven JXR Plugin</name>
@@ -262,7 +267,7 @@
       <artifactId>maven-toolchains-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Apache Maven Verifier Plugin</name>
+      <name>Maven Verifier Plugin</name>
       <prefix>verifier</prefix>
       <artifactId>maven-verifier-plugin</artifactId>
     </plugin>
@@ -270,11 +275,6 @@
       <name>Apache Maven WAR Plugin</name>
       <prefix>war</prefix>
       <artifactId>maven-war-plugin</artifactId>
-    </plugin>
-    <plugin>
-      <name>Apache Maven JDeps Plugin</name>
-      <prefix>jdeps</prefix>
-      <artifactId>maven-jdeps-plugin</artifactId>
     </plugin>
   </plugins>
 </metadata>

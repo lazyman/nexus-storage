@@ -32,7 +32,12 @@
       <artifactId>apt-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>AspectJ compiler Maven Plugin</name>
+      <name>ArgoUML Maven Plugin</name>
+      <prefix>argouml</prefix>
+      <artifactId>argouml-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Mojo's AspectJ Maven Plugin</name>
       <prefix>aspectj</prefix>
       <artifactId>aspectj-maven-plugin</artifactId>
     </plugin>
@@ -92,6 +97,11 @@
       <artifactId>chronos-jmeter-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Chronos</name>
+      <prefix>chronos</prefix>
+      <artifactId>chronos-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Chronos Report</name>
       <prefix>chronos-report</prefix>
       <artifactId>chronos-report-maven-plugin</artifactId>
@@ -102,14 +112,34 @@
       <artifactId>chronos-surefire-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Chronos Timing</name>
+      <prefix>chronos-timer</prefix>
+      <artifactId>chronos-timer-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Ckjm Maven Mojo</name>
+      <prefix>ckjm</prefix>
+      <artifactId>ckjm-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Clirr Maven Plugin</name>
       <prefix>clirr</prefix>
       <artifactId>clirr-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Build Number Maven Plugin</name>
+      <prefix>cloudera-buildnumber</prefix>
+      <artifactId>cloudera-buildnumber-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Mojo's Maven plugin for Cobertura</name>
       <prefix>cobertura</prefix>
       <artifactId>cobertura-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Codehuas Maven Plugin</name>
+      <prefix>codehaus</prefix>
+      <artifactId>codehaus-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>CodeNarc Maven Plugin</name>
@@ -122,8 +152,18 @@
       <artifactId>commons-attributes-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Maven Consumer Plugin</name>
+      <prefix>consumer</prefix>
+      <artifactId>consumer-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Dashboard Report Plugin</name>
       <prefix>dashboard</prefix>
+      <artifactId>dashboard-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Maven Dashboard Report Plugin</name>
+      <prefix>dashboard-report</prefix>
       <artifactId>dashboard-maven-plugin</artifactId>
     </plugin>
     <plugin>
@@ -135,6 +175,11 @@
       <name>Maven Database Upgrade Plugin</name>
       <prefix>dbupgrade</prefix>
       <artifactId>dbupgrade-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Maven Debian Package Plug-In</name>
+      <prefix>deb</prefix>
+      <artifactId>deb-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Dependency Maven Plugin</name>
@@ -152,6 +197,11 @@
       <artifactId>dita-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>XMLmind Dita Compiler Maven Plugin</name>
+      <prefix>ditac</prefix>
+      <artifactId>ditac-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>DITA Open Toolkit Maven Plugin</name>
       <prefix>ditaot</prefix>
       <artifactId>ditaot-maven-plugin</artifactId>
@@ -160,6 +210,16 @@
       <name>Maven Docbook plugin</name>
       <prefix>docbook</prefix>
       <artifactId>docbook-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Amazon EC2 Maven Plugin</name>
+      <prefix>ec2</prefix>
+      <artifactId>ec2-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Maven Email plugin</name>
+      <prefix>email</prefix>
+      <artifactId>email-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Emma Maven Plugin</name>
@@ -192,7 +252,7 @@
       <artifactId>fit-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Fitnesse plugin.</name>
+      <name>FitNesse Maven Plugin</name>
       <prefix>fitnesse</prefix>
       <artifactId>fitnesse-maven-plugin</artifactId>
     </plugin>
@@ -202,7 +262,12 @@
       <artifactId>flatten-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Groovy Maven Plugin</name>
+      <name>Maven GAE Plugin</name>
+      <prefix>gae</prefix>
+      <artifactId>google-app-engine-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>GMaven Legacy :: Groovy Maven Plugin</name>
       <prefix>groovy</prefix>
       <artifactId>groovy-maven-plugin</artifactId>
     </plugin>
@@ -237,17 +302,22 @@
       <artifactId>jalopy-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Maven Jardiff Plugin</name>
+      <prefix>jardiff</prefix>
+      <artifactId>jardiff-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven JasperReports Plugin</name>
       <prefix>jasperreports</prefix>
       <artifactId>jasperreports-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>JavaCC Maven Plugin</name>
+      <name>Maven 2 JavaCC Plugin</name>
       <prefix>javacc</prefix>
       <artifactId>javacc-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven2 JavaNCSS plugin</name>
+      <name>JavaNCSS Maven Plugin</name>
       <prefix>javancss</prefix>
       <artifactId>javancss-maven-plugin</artifactId>
     </plugin>
@@ -275,6 +345,11 @@
       <name>JDepend Maven Plugin</name>
       <prefix>jdepend</prefix>
       <artifactId>jdepend-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>JDiff Maven Plugin</name>
+      <prefix>jdiff</prefix>
+      <artifactId>jdiff-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>JPox Maven Plugin</name>
@@ -347,9 +422,24 @@
       <artifactId>maven-jpox-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Spring BeanDoc Plugin</name>
+      <prefix>springbeandoc</prefix>
+      <artifactId>maven-springbeandoc-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven MiniJar Plugin</name>
       <prefix>minijar</prefix>
       <artifactId>minijar-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Mock Repository Maven Plugin</name>
+      <prefix>mock-repository</prefix>
+      <artifactId>mock-repository-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Mojo Development Maven Plugin</name>
+      <prefix>mojodev</prefix>
+      <artifactId>mojodev-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Mock Repository Manager: Maven Plugin</name>
@@ -362,12 +452,12 @@
       <artifactId>multibuild-optimizer-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Native Plugin</name>
+      <name>Native Maven Plugin</name>
       <prefix>native</prefix>
       <artifactId>native-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Native2ascii Plugin</name>
+      <name>Native2Ascii Maven Plugin</name>
       <prefix>native2ascii</prefix>
       <artifactId>native2ascii-maven-plugin</artifactId>
     </plugin>
@@ -447,7 +537,7 @@
       <artifactId>remote-source-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Retrotranslator MAven Plugin</name>
+      <name>Retrotranslator Maven Plugin</name>
       <prefix>retrotranslator</prefix>
       <artifactId>retrotranslator-maven-plugin</artifactId>
     </plugin>
@@ -507,7 +597,7 @@
       <artifactId>ship-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Super Helpful Integration Testing ThingY (SHITTY) Maven Plugin</name>
+      <name>Super Helpful Integration Testing ThingY (SHITTY)</name>
       <prefix>shitty</prefix>
       <artifactId>shitty-maven-plugin</artifactId>
     </plugin>
@@ -537,17 +627,22 @@
       <artifactId>springdoclet-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Spring IDE Plugin</name>
+      <prefix>springide</prefix>
+      <artifactId>springide-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>springws-maven-plugin</name>
       <prefix>springws</prefix>
       <artifactId>springws-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>SQL Plugin for Maven</name>
+      <name>SQL Maven Plugin</name>
       <prefix>sql</prefix>
       <artifactId>sql-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>SQLJ Maven Plugin</name>
+      <name>Mojo's SQLJ Maven Plugin</name>
       <prefix>sqlj</prefix>
       <artifactId>sqlj-maven-plugin</artifactId>
     </plugin>
@@ -560,6 +655,11 @@
       <name>Sysdeo Tomcat Maven Plugin</name>
       <prefix>sysdeo-tomcat</prefix>
       <artifactId>sysdeo-tomcat-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>Syslog Maven Plugin</name>
+      <prefix>syslog</prefix>
+      <artifactId>syslog-maven-plugin</artifactId>
     </plugin>
     <plugin>
       <name>Taglist Maven Plugin</name>
@@ -582,7 +682,7 @@
       <artifactId>tomcat-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Plugin for TrueZIP</name>
+      <name>TrueZIP Maven Plugin</name>
       <prefix>truezip</prefix>
       <artifactId>truezip-maven-plugin</artifactId>
     </plugin>
@@ -602,6 +702,11 @@
       <artifactId>vfs-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Virtualization Maven Plugin</name>
+      <prefix>virtualization</prefix>
+      <artifactId>virtualization-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Maven Wagon plugin</name>
       <prefix>wagon</prefix>
       <artifactId>wagon-maven-plugin</artifactId>
@@ -617,7 +722,7 @@
       <artifactId>webdoclet-maven-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Weblogic Maven Plugin</name>
+      <name>Mojo's Maven plugin for WebLogic</name>
       <prefix>weblogic</prefix>
       <artifactId>weblogic-maven-plugin</artifactId>
     </plugin>
