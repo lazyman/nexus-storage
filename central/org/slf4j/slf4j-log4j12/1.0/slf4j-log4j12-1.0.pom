@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.slf4j</groupId>
+  <artifactId>slf4j-log4j12</artifactId>
+  <name>slf4j-log4j12</name>
+  <version>1.0</version>
+  <description>See http://www.slf4j.org/ 
+
+    Javadocs for the Log4jLoggerAdapter are available at 
+    http://www.slf4j.org/api/org/slf4j/impl/Log4jLoggerAdapter.html</description>
+  <url>http://www.slf4j.org/</url>
+  <licenses>
+    <license>
+      <name>SLF4J License</name>
+      <url>http://www.slf4j.org/license.html</url>
+    </license>
+  </licenses>
+</project>
