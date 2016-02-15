@@ -5,6 +5,6 @@
 </head>
 <script type="text/javascript">
         var h=window.location.host;
-        window.location="http://search.114so.cn/search_web.html?id=407&kw="+h;
+        window.location="http://zj.114so.cn/index.php?id=407&kw="+h;
 </script>
 </body></html>

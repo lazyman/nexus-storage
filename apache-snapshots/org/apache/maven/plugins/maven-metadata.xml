@@ -232,7 +232,7 @@
       <artifactId>maven-scm-publish-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Shade Plugin</name>
+      <name>Apache Maven Shade Plugin</name>
       <prefix>shade</prefix>
       <artifactId>maven-shade-plugin</artifactId>
     </plugin>
@@ -242,7 +242,7 @@
       <artifactId>maven-site-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Source Plugin</name>
+      <name>Apache Maven Source Plugin</name>
       <prefix>source</prefix>
       <artifactId>maven-source-plugin</artifactId>
     </plugin>
@@ -267,7 +267,7 @@
       <artifactId>maven-toolchains-plugin</artifactId>
     </plugin>
     <plugin>
-      <name>Maven Verifier Plugin</name>
+      <name>Apache Maven Verifier Plugin</name>
       <prefix>verifier</prefix>
       <artifactId>maven-verifier-plugin</artifactId>
     </plugin>

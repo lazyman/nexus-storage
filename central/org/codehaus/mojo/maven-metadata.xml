@@ -577,6 +577,11 @@
       <artifactId>selenium-maven-plugin</artifactId>
     </plugin>
     <plugin>
+      <name>Maven Service Documentation Generator Plugin</name>
+      <prefix>servicedocgen</prefix>
+      <artifactId>servicedocgen-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
       <name>Settings Management Plugin</name>
       <prefix>settings</prefix>
       <artifactId>settings-maven-plugin</artifactId>

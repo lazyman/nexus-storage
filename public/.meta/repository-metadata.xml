@@ -55,11 +55,5 @@
       <policy>snapshot</policy>
       <url>@rootUrl@/content/repositories/apache-snapshots</url>
     </memberRepository>
-    <memberRepository>
-      <id>codehaus-snapshots</id>
-      <name>Codehaus Snapshots</name>
-      <policy>snapshot</policy>
-      <url>@rootUrl@/content/repositories/codehaus-snapshots</url>
-    </memberRepository>
   </memberRepositories>
 </repository-metadata>
