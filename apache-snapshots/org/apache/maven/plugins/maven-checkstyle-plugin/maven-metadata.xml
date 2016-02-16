@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-checkstyle-plugin</artifactId>
+  <versioning>
+    <latest>2.9.2-SNAPSHOT</latest>
+    <versions>
+      <version>2.9.2-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20150726004152</lastUpdated>
+  </versioning>
+</metadata>
