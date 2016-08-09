@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+The MIT License
+
+Copyright (c) 2004-2009, Sun Microsystems, Inc., Kohsuke Kawaguchi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+--><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.jenkins-ci.plugins</groupId>
+    <artifactId>plugin</artifactId>
+    <version>1.480</version>
+  </parent>
+
+  <groupId>org.jenkins-ci.plugins.icon-shim</groupId>
+  <artifactId>icon-shim-pom</artifactId>
+  <version>1.0.3</version>
+  <packaging>pom</packaging>
+
+  <name>Icon Shim Base POM.</name>
+  <description>
+    Base POM for the Icon Shim modules. The hope is that these modules (two of) should collapse into one (i.e. just a
+    plugin module) if Jenkins core can lose it's dependency on the icon-set module. This should be possible if we
+    change the core icon tag to use CSS based icons.
+  </description>
+  <url>https://wiki.jenkins-ci.org/display/JENKINS/Icon+Shim+Plugin</url>
+
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>http://opensource.org/licenses/MIT</url>
+    </license>
+  </licenses>
+
+  <modules>
+    <module>icon-set</module>
+    <module>plugin</module>
+  </modules>
+
+  <scm>
+    <connection>scm:git:git://github.com/jenkinsci/icon-shim-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:jenkinsci/icon-shim-plugin.git</developerConnection>
+    <url>http://github.com/jenkinsci/icon-shim-plugin</url>
+    <tag>icon-shim-pom-1.0.3</tag>
+  </scm>
+
+  <developers>
+    <developer>
+      <id>tfennelly</id>
+      <name>Tom Fennelly</name>
+    </developer>
+  </developers>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5</version>
+      </plugin>
+    </plugins>
+  </build>
+
+  
+
+  
+
+</project>

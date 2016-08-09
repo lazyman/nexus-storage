@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>lib</artifactId>
+    <groupId>org.jvnet.hudson</groupId>
+    <version>1.7</version>
+  </parent>
+  <artifactId>embedded-rhino-debugger</artifactId>
+  <version>1.2</version>
+  <name>embedded-rhino-debugger</name>
+  <description>Swing-based Rhino debugger that's embeddable.</description>
+  
+  <dependencies>
+    <dependency>
+      <groupId>org.jvnet.hudson</groupId>
+      <artifactId>htmlunit-core-js</artifactId>
+      <version>2.6-hudson-1</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <scm>
+    <connection>scm:svn:https://guest@svn.dev.java.net/svn/hudson/tags/embedded-rhino-debugger-1.2</connection>
+    <developerConnection>scm:svn:https://svn.dev.java.net/svn/hudson/tags/embedded-rhino-debugger-1.2</developerConnection>
+    <url>https://hudson.dev.java.net/source/browse/hudson/tags/embedded-rhino-debugger-1.2</url>
+  </scm>
+</project>

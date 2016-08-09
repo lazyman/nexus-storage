@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository-metadata>
+  <version>1.0.0</version>
+  <url>http://repo.jenkins-ci.org/public/</url>
+  <id>repo.jenkins-ci.org</id>
+  <name>repo.jenkins-ci.org</name>
+  <layout>maven2</layout>
+  <policy>release</policy>
+  <localUrl>@rootUrl@/content/repositories/repo.jenkins-ci.org</localUrl>
+</repository-metadata>
