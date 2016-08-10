@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.jvnet.localizer</groupId>
+  <artifactId>localizer-parent</artifactId>
+  <packaging>pom</packaging>
+  <version>1.14</version>
+  <name>Localizer parent POM</name>
+  <modules>
+    <module>lib</module>
+    <module>maven-plugin</module>
+    <!--module>test</module-->
+  </modules>
+
+  <scm>
+    <connection>scm:git:git@github.com/kohsuke/localizer.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/kohsuke/localizer.git</developerConnection>
+  </scm>
+
+  <licenses>
+    <license>
+      <name>The MIT license</name>
+      <url>http://www.opensource.org/licenses/mit-license.php</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <distributionManagement>
+    <repository>
+      <id>maven.jenkins-ci.org</id>
+      <url>http://maven.jenkins-ci.org:8081/content/repositories/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>maven.jenkins-ci.org</id>
+      <url>http://maven.jenkins-ci.org:8081/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  
+</project>
